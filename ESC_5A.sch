@@ -537,11 +537,11 @@ Wire Notes Line
 Text Notes 750  4950 0    50   ~ 0
 USBc Connector
 $Comp
-L SamacSys_Parts:TB67H401FTG,EL M?
+L SamacSys_Parts:TB67H401FTG,EL M1
 U 1 1 60D3593B
 P 2250 2200
-F 0 "M?" H 4094 1696 50  0000 L CNN
-F 1 "TB67H401FTG,EL" H 4094 1605 50  0000 L CNN
+F 0 "M1" H 3100 2250 50  0000 L CNN
+F 1 "TB67H401FTG,EL" H 2850 2350 50  0000 L CNN
 F 2 "QFN50P700X700X100-49N-D" H 3900 2800 50  0001 L CNN
 F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=61997&prodName=TB67H401FTG" H 3900 2700 50  0001 L CNN
 F 4 "Brushed Motor Driver IC, 1-Channel 50V/6.0A or 2-Channel 50V/3.0A each channel, QFN48 7mmx7mm Packag" H 3900 2600 50  0001 L CNN "Description"
@@ -551,6 +551,264 @@ F 7 "https://www.mouser.co.uk/ProductDetail/Toshiba/TB67H401FTGEL?qs=byeeYqUIh0M
 F 8 "Toshiba" H 3900 2200 50  0001 L CNN "Manufacturer_Name"
 F 9 "TB67H401FTG,EL" H 3900 2100 50  0001 L CNN "Manufacturer_Part_Number"
 	1    2250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 60CD60FE
+P 2950 750
+F 0 "R4" V 3155 750 50  0000 C CNN
+F 1 "15k" V 3064 750 50  0000 C CNN
+F 2 "" V 2990 740 50  0001 C CNN
+F 3 "~" H 2950 750 50  0001 C CNN
+	1    2950 750 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R5
+U 1 1 60CDA7BD
+P 3500 750
+F 0 "R5" V 3705 750 50  0000 C CNN
+F 1 "10k" V 3614 750 50  0000 C CNN
+F 2 "" V 3540 740 50  0001 C CNN
+F 3 "~" H 3500 750 50  0001 C CNN
+	1    3500 750 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 750  3250 750 
+Connection ~ 3250 750 
+Wire Wire Line
+	3250 750  3350 750 
+Wire Wire Line
+	2800 750  2750 750 
+Wire Wire Line
+	2750 750  2750 800 
+$Comp
+L power:GND #PWR019
+U 1 1 60CE7E63
+P 2750 800
+F 0 "#PWR019" H 2750 550 50  0001 C CNN
+F 1 "GND" H 2755 627 50  0000 C CNN
+F 2 "" H 2750 800 50  0001 C CNN
+F 3 "" H 2750 800 50  0001 C CNN
+	1    2750 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1400 3350 1300
+$Comp
+L power:GND #PWR020
+U 1 1 60CEE68C
+P 4150 1300
+F 0 "#PWR020" H 4150 1050 50  0001 C CNN
+F 1 "GND" H 4155 1127 50  0000 C CNN
+F 2 "" H 4150 1300 50  0001 C CNN
+F 3 "" H 4150 1300 50  0001 C CNN
+	1    4150 1300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4050 2300
+NoConn ~ 4050 2500
+NoConn ~ 4050 2700
+NoConn ~ 2250 2200
+NoConn ~ 2250 2300
+NoConn ~ 2250 2400
+NoConn ~ 2250 2700
+NoConn ~ 2250 3000
+NoConn ~ 2250 3300
+NoConn ~ 2550 4100
+NoConn ~ 2650 4100
+NoConn ~ 3550 4100
+NoConn ~ 3650 4100
+NoConn ~ 4050 3300
+NoConn ~ 4050 3000
+NoConn ~ 2750 1400
+NoConn ~ 2650 1400
+Wire Wire Line
+	4050 2400 4200 2400
+Text GLabel 4200 2400 2    50   Input ~ 0
+VCC_Driver
+Text GLabel 3950 750  2    50   Input ~ 0
+VCC_Driver
+Text GLabel 5450 2600 2    50   Input ~ 0
+PWR_IN
+Text GLabel 2400 1050 0    50   Input ~ 0
+VCC_Driver
+Text GLabel 3050 1400 1    50   Input ~ 0
+CTRL_1
+Text GLabel 2950 1400 1    50   Input ~ 0
+CTRL_2
+Wire Wire Line
+	2400 1050 2850 1050
+Wire Wire Line
+	2850 1050 2850 1400
+Connection ~ 2850 1050
+Wire Wire Line
+	2850 1050 3550 1050
+Wire Wire Line
+	3550 1050 3550 1400
+Wire Wire Line
+	3250 750  3250 1400
+Text GLabel 3150 1400 1    50   Input ~ 0
+OSCM
+Text GLabel 900  1500 0    50   Input ~ 0
+OSCM
+Text GLabel 1000 950  0    50   Input ~ 0
+VCC_Driver
+$Comp
+L Device:R_US R?
+U 1 1 60D1FBDA
+P 1150 1200
+F 0 "R?" H 1218 1246 50  0000 L CNN
+F 1 "5.1k" H 1218 1155 50  0000 L CNN
+F 2 "" V 1190 1190 50  0001 C CNN
+F 3 "~" H 1150 1200 50  0001 C CNN
+	1    1150 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 60D22B40
+P 1150 1850
+F 0 "C?" H 1328 1896 50  0000 L CNN
+F 1 "270pF" H 1328 1805 50  0000 L CNN
+F 2 "" H 1150 1850 50  0001 C CNN
+F 3 "~" H 1150 1850 50  0001 C CNN
+	1    1150 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 950  1150 950 
+Wire Wire Line
+	1150 950  1150 1050
+Wire Wire Line
+	1150 1350 1150 1500
+Wire Wire Line
+	900  1500 1150 1500
+Connection ~ 1150 1500
+Wire Wire Line
+	1150 1500 1150 1600
+Wire Wire Line
+	1150 2100 1150 2150
+$Comp
+L power:GND #PWR?
+U 1 1 60D2A2ED
+P 1150 2150
+F 0 "#PWR?" H 1150 1900 50  0001 C CNN
+F 1 "GND" H 1155 1977 50  0000 C CNN
+F 2 "" H 1150 2150 50  0001 C CNN
+F 3 "" H 1150 2150 50  0001 C CNN
+	1    1150 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 750  3800 750 
+Wire Wire Line
+	3350 1300 3750 1300
+Wire Wire Line
+	3750 1400 3750 1300
+Connection ~ 3750 1300
+Wire Wire Line
+	3750 1300 4150 1300
+Wire Wire Line
+	3650 1400 3650 1200
+Wire Wire Line
+	3650 1200 3800 1200
+Wire Wire Line
+	3800 1200 3800 1150
+$Comp
+L Device:R_US R?
+U 1 1 60D38513
+P 3800 1000
+F 0 "R?" V 4005 1000 50  0000 C CNN
+F 1 "10k" V 3914 1000 50  0000 C CNN
+F 2 "" V 3840 990 50  0001 C CNN
+F 3 "~" H 3800 1000 50  0001 C CNN
+	1    3800 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 850  3800 750 
+Connection ~ 3800 750 
+Wire Wire Line
+	3800 750  3950 750 
+Wire Wire Line
+	3800 1200 4000 1200
+Connection ~ 3800 1200
+Text GLabel 4000 1200 2    50   Input ~ 0
+FB
+Wire Wire Line
+	4050 2200 4300 2200
+$Comp
+L Device:R_US R?
+U 1 1 60D40D5B
+P 4300 2050
+F 0 "R?" V 4505 2050 50  0000 C CNN
+F 1 "10k" V 4414 2050 50  0000 C CNN
+F 2 "" V 4340 2040 50  0001 C CNN
+F 3 "~" H 4300 2050 50  0001 C CNN
+	1    4300 2050
+	-1   0    0    1   
+$EndComp
+Text GLabel 4350 1850 2    50   Input ~ 0
+VCC_Driver
+Wire Wire Line
+	4300 1900 4300 1850
+Wire Wire Line
+	4300 1850 4350 1850
+Wire Wire Line
+	4300 2200 4450 2200
+Connection ~ 4300 2200
+Text GLabel 4450 2200 2    50   Input ~ 0
+LO
+Wire Wire Line
+	4050 2600 4800 2600
+$Comp
+L pspice:CAP C?
+U 1 1 60D4BEBC
+P 5400 2850
+F 0 "C?" H 5578 2896 50  0000 L CNN
+F 1 "100uF" H 5578 2805 50  0000 L CNN
+F 2 "" H 5400 2850 50  0001 C CNN
+F 3 "~" H 5400 2850 50  0001 C CNN
+F 4 "Must be electrolytic" H 5400 2850 50  0001 C CNN "Notes"
+	1    5400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 60D4DEB0
+P 4800 2850
+F 0 "C?" H 4978 2896 50  0000 L CNN
+F 1 ".1uF" H 4978 2805 50  0000 L CNN
+F 2 "" H 4800 2850 50  0001 C CNN
+F 3 "~" H 4800 2850 50  0001 C CNN
+	1    4800 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 2600
+Wire Wire Line
+	4800 2600 5400 2600
+Connection ~ 5400 2600
+Wire Wire Line
+	5400 2600 5450 2600
+Wire Wire Line
+	4800 3100 5100 3100
+Wire Wire Line
+	5100 3100 5100 3150
+Connection ~ 5100 3100
+Wire Wire Line
+	5100 3100 5400 3100
+$Comp
+L power:GND #PWR?
+U 1 1 60D5B4BF
+P 5100 3150
+F 0 "#PWR?" H 5100 2900 50  0001 C CNN
+F 1 "GND" H 5105 2977 50  0000 C CNN
+F 2 "" H 5100 3150 50  0001 C CNN
+F 3 "" H 5100 3150 50  0001 C CNN
+	1    5100 3150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
