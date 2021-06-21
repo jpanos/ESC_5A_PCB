@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
+Title "ESC_5A"
 Date ""
-Rev ""
-Comp ""
+Rev "Rev One"
+Comp "50 Day"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -19,7 +19,7 @@ U 1 1 60CCC229
 P 2050 5600
 F 0 "J1" H 2050 6267 50  0000 C CNN
 F 1 "USB4105-GF-A" H 2050 6176 50  0000 C CNN
-F 2 "GCT_USB4105-GF-A" H 2050 5600 50  0001 L BNN
+F 2 "USB4105-GF-A:GCT_USB4105-GF-A" H 2050 5600 50  0001 L BNN
 F 3 "" H 2050 5600 50  0001 L BNN
 F 4 "A3" H 2050 5600 50  0001 L BNN "PARTREV"
 F 5 "3.31 mm" H 2050 5600 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
@@ -45,7 +45,7 @@ U 1 1 60CD2456
 P 4550 6900
 F 0 "IC2" H 5150 7165 50  0000 C CNN
 F 1 "AP2112K-3.3TRG1" H 5150 7074 50  0000 C CNN
-F 2 "SOT95P282X130-5N" H 5600 7000 50  0001 L CNN
+F 2 "SamacSys_Parts:SOT95P282X130-5N" H 5600 7000 50  0001 L CNN
 F 3 "" H 5600 6900 50  0001 L CNN
 F 4 "600mA 3.3V LDO Regulator Enable SOT23-5 DiodesZetex AP2112K-3.3TRG1, LDO Voltage Regulator, 3.3 V +/-1.5%, 2.5  6 Vin, 5-Pin SOT-23" H 5600 6800 50  0001 L CNN "Description"
 F 5 "1.3" H 5600 6700 50  0001 L CNN "Height"
@@ -62,7 +62,7 @@ U 1 1 60CD45A6
 P 8750 4150
 F 0 "IC1" H 10094 3896 50  0000 L CNN
 F 1 "ATSAMD21E17D-AUT" H 10094 3805 50  0000 L CNN
-F 2 "QFP80P900X900X120-32N" H 9900 4750 50  0001 L CNN
+F 2 "SamacSys_Parts:QFP80P900X900X120-32N" H 9900 4750 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ATSAMD21E17D-AUT.pdf" H 9900 4650 50  0001 L CNN
 F 4 "ARM Microcontrollers - MCU 32TQFP IND TEMP, GREEN,1.6-3.6V,48MHz" H 9900 4550 50  0001 L CNN "Description"
 F 5 "1.2" H 9900 4450 50  0001 L CNN "Height"
@@ -377,7 +377,7 @@ F 3 "" H 850 7500 50  0001 C CNN
 $EndComp
 Text GLabel 1650 6750 1    50   Input ~ 0
 NRST
-Text GLabel 9650 3350 1    50   Input ~ 0
+Text GLabel 9650 3300 1    50   Input ~ 0
 NRST
 $Comp
 L power:+3.3V #PWR012
@@ -468,9 +468,9 @@ F 3 "" H 8750 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8750 6050 8750 6150
-Text GLabel 10050 4150 2    50   Input ~ 0
+Text GLabel 10100 4150 2    50   Input ~ 0
 D+
-Text GLabel 10050 4250 2    50   Input ~ 0
+Text GLabel 10100 4250 2    50   Input ~ 0
 D-
 Wire Wire Line
 	850  6950 850  6900
@@ -500,7 +500,7 @@ U 1 1 60D0E744
 P 5050 4750
 F 0 "IC3" H 5700 5015 50  0000 C CNN
 F 1 "AP1501A-50K5G-13" H 5700 4924 50  0000 C CNN
-F 2 "AP1501A50K5G13" H 6200 4850 50  0001 L CNN
+F 2 "SamacSys_Parts:AP1501A50K5G13" H 6200 4850 50  0001 L CNN
 F 3 "https://www.arrow.com/en/products/ap1501a-50k5g-13/diodes-incorporated" H 6200 4750 50  0001 L CNN
 F 4 "Switching Voltage Regulators BUCK CONV PWM 150KHz 5A 4.5-40V 1.23V" H 6200 4650 50  0001 L CNN "Description"
 F 5 "4.85" H 6200 4550 50  0001 L CNN "Height"
@@ -573,25 +573,20 @@ Connection ~ 4850 5150
 Wire Wire Line
 	4900 4850 4900 5650
 Wire Wire Line
-	4900 5650 5050 5650
-Wire Wire Line
 	4900 4850 5050 4850
 Wire Wire Line
 	5800 5350 5800 5650
 $Comp
 L Device:D_Schottky D2
 U 1 1 60D69172
-P 5050 5800
-F 0 "D2" V 5004 5880 50  0000 L CNN
-F 1 "D_Schottky" V 5095 5880 50  0000 L CNN
-F 2 "" H 5050 5800 50  0001 C CNN
-F 3 "~" H 5050 5800 50  0001 C CNN
-	1    5050 5800
+P 5050 5900
+F 0 "D2" V 5004 5980 50  0000 L CNN
+F 1 "D_Schottky" V 5095 5980 50  0000 L CNN
+F 2 "" H 5050 5900 50  0001 C CNN
+F 3 "~" H 5050 5900 50  0001 C CNN
+	1    5050 5900
 	0    1    1    0   
 $EndComp
-Connection ~ 5050 5650
-Wire Wire Line
-	5050 5650 5300 5650
 Wire Wire Line
 	5600 5650 5800 5650
 Connection ~ 5800 5650
@@ -612,16 +607,9 @@ Wire Wire Line
 	4450 5150 4650 5150
 Wire Wire Line
 	4650 5150 4650 6150
-Wire Wire Line
-	4650 6150 5050 6150
 Connection ~ 4650 5150
 Wire Wire Line
 	4650 5150 4850 5150
-Wire Wire Line
-	5050 5950 5050 6150
-Connection ~ 5050 6150
-Wire Wire Line
-	5050 6150 5250 6150
 Wire Wire Line
 	5250 6150 5250 6200
 Connection ~ 5250 6150
@@ -705,23 +693,23 @@ U 60E06626
 F0 "Motor Driver" 50
 F1 "Motor_Driver.sch" 50
 $EndSheet
-Text GLabel 8750 4150 0    50   Input ~ 0
+Text GLabel 8700 4150 0    50   Input ~ 0
 LO1_MCU
-Text GLabel 8750 4250 0    50   Input ~ 0
+Text GLabel 8700 4250 0    50   Input ~ 0
 LO2_MCU
-Text GLabel 8750 4350 0    50   Input ~ 0
+Text GLabel 8700 4350 0    50   Input ~ 0
 PWMA
-Text GLabel 8750 4450 0    50   Input ~ 0
+Text GLabel 8700 4450 0    50   Input ~ 0
 PWMB
-Text GLabel 8750 4750 0    50   Input ~ 0
+Text GLabel 8700 4750 0    50   Input ~ 0
 INB1
-Text GLabel 8750 4850 0    50   Input ~ 0
+Text GLabel 8700 4850 0    50   Input ~ 0
 INB2
-Text GLabel 8750 4550 0    50   Input ~ 0
+Text GLabel 8700 4550 0    50   Input ~ 0
 INA1
-Text GLabel 8750 4650 0    50   Input ~ 0
+Text GLabel 8700 4650 0    50   Input ~ 0
 INA2
-Text GLabel 9250 5550 3    50   Input ~ 0
+Text GLabel 9250 5650 3    50   Input ~ 0
 HBMODE
 Wire Wire Line
 	9050 5550 8750 5550
@@ -755,4 +743,42 @@ Wire Notes Line
 	2150 6450 11050 6450
 Text Notes 7000 2950 0    50   ~ 0
 MCU \n
+Wire Wire Line
+	9250 5650 9250 5550
+Wire Wire Line
+	4650 6150 5050 6150
+Wire Wire Line
+	4900 5650 5050 5650
+Wire Wire Line
+	5050 5750 5050 5650
+Connection ~ 5050 5650
+Wire Wire Line
+	5050 5650 5300 5650
+Wire Wire Line
+	5050 6050 5050 6150
+Connection ~ 5050 6150
+Wire Wire Line
+	5050 6150 5250 6150
+Wire Wire Line
+	8750 4150 8700 4150
+Wire Wire Line
+	8750 4250 8700 4250
+Wire Wire Line
+	8750 4350 8700 4350
+Wire Wire Line
+	8750 4450 8700 4450
+Wire Wire Line
+	8750 4550 8700 4550
+Wire Wire Line
+	8750 4650 8700 4650
+Wire Wire Line
+	8750 4750 8700 4750
+Wire Wire Line
+	8750 4850 8700 4850
+Wire Wire Line
+	10050 4150 10100 4150
+Wire Wire Line
+	10050 4250 10100 4250
+Wire Wire Line
+	9650 3300 9650 3350
 $EndSCHEMATC

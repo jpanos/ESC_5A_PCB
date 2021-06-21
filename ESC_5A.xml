@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Projects\ESC_5A_PCB\ESC_5A.sch</source>
+    <date>6/21/2021 4:45:58 PM</date>
+    <tool>Eeschema (5.1.9)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ESC_5A.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Motor Driver/" tstamps="/60E06626/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Motor_Driver.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>USB4105-GF-A</value>
+      <footprint>GCT_USB4105-GF-A</footprint>
+      <fields>
+        <field name="MANUFACTURER">GCT</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3.31 mm</field>
+        <field name="PARTREV">A3</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+      </fields>
+      <libsource lib="USB4105-GF-A" part="USB4105-GF-A" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CCC229</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>5.1k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CCE587</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>AP2112K-3.3TRG1</value>
+      <footprint>SOT95P282X130-5N</footprint>
+      <fields>
+        <field name="Description">600mA 3.3V LDO Regulator Enable SOT23-5 DiodesZetex AP2112K-3.3TRG1, LDO Voltage Regulator, 3.3 V +/-1.5%, 2.5  6 Vin, 5-Pin SOT-23</field>
+        <field name="Height">1.3</field>
+        <field name="Manufacturer_Name">Diodes Inc.</field>
+        <field name="Manufacturer_Part_Number">AP2112K-3.3TRG1</field>
+        <field name="Mouser Part Number">621-AP2112K-3.3TRG1</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP2112K-33TRG1?qs=x6A8l6qLYDDPYHosCdzh%2FA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="AP2112K-3.3TRG1" description="600mA 3.3V LDO Regulator Enable SOT23-5 DiodesZetex AP2112K-3.3TRG1, LDO Voltage Regulator, 3.3 V +/-1.5%, 2.5  6 Vin, 5-Pin SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CD2456</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>ATSAMD21E17D-AUT</value>
+      <footprint>QFP80P900X900X120-32N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/ATSAMD21E17D-AUT.pdf</datasheet>
+      <fields>
+        <field name="Description">ARM Microcontrollers - MCU 32TQFP IND TEMP, GREEN,1.6-3.6V,48MHz</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">ATSAMD21E17D-AUT</field>
+        <field name="Mouser Part Number">556-ATSAMD21E17D-AUT</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Microchip-Technology-Atmel/ATSAMD21E17D-AUT?qs=byeeYqUIh0O8S6Jd8zVPrw%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="ATSAMD21E17D-AUT" description="ARM Microcontrollers - MCU 32TQFP IND TEMP, GREEN,1.6-3.6V,48MHz"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CD45A6</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CDE3B6</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CE2313</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CE3EE9</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>WS2812B</value>
+      <footprint>LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</footprint>
+      <datasheet>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</datasheet>
+      <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CD5C4B</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>5.1k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CF9E89</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>100k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CFD404</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>.1uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CFDAFF</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CFF20B</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>.1uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D0686B</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>.1uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D0D0C9</tstamp>
+    </comp>
+    <comp ref="IC3">
+      <value>AP1501A-50K5G-13</value>
+      <footprint>AP1501A50K5G13</footprint>
+      <datasheet>https://www.arrow.com/en/products/ap1501a-50k5g-13/diodes-incorporated</datasheet>
+      <fields>
+        <field name="Description">Switching Voltage Regulators BUCK CONV PWM 150KHz 5A 4.5-40V 1.23V</field>
+        <field name="Height">4.85</field>
+        <field name="Manufacturer_Name">Diodes Inc.</field>
+        <field name="Manufacturer_Part_Number">AP1501A-50K5G-13</field>
+        <field name="Mouser Part Number">621-AP1501A-50K5G-13</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP1501A-50K5G-13?qs=oUsD4qhOtFz5JD%252BZT9Fsfg%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="AP1501A-50K5G-13" description="Switching Voltage Regulators BUCK CONV PWM 150KHz 5A 4.5-40V 1.23V"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D0E744</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>10uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D204F4</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>18uH</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D3F4AC</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>D_Schottky</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D69172</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>10uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D6F27B</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x03_Male</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D9E64E</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D0906D</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TB67H420FTG_EL</value>
+      <footprint>P-VQFN48-0707-0p50-004_TOS</footprint>
+      <libsource lib="2021-06-21_15-40-13" part="TB67H420FTG_EL" description=""/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60E1079C</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>100uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Notes">Must be electrolytic</field>
+      </fields>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60E4597A</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>.1uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60E46C96</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>5k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60EAD954</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>20k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60EAD95A</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>.1uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60EEEB44</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>270pF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60F1F7C7</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60F4E039</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60F513DB</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>5.1k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60F92E9D</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Screw_Terminal_01x02</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60FD2C43</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Screw_Terminal_01x02</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60FD3643</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Screw_Terminal_01x02</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60FD4AF3</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="2021-06-21_15-40-13" part="TB67H420FTG_EL">
+      <footprints>
+        <fp>P-VQFN48-0707-0p50-004_TOS</fp>
+        <fp>P-VQFN48-0707-0p50-004_TOS-M</fp>
+        <fp>P-VQFN48-0707-0p50-004_TOS-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TB67H420FTG_EL</field>
+        <field name="Footprint">P-VQFN48-0707-0p50-004_TOS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TBLKAB" type="unspc"/>
+        <pin num="2" name="HBMODE" type="unspc"/>
+        <pin num="3" name="NC" type="NotConnected"/>
+        <pin num="4" name="NC" type="NotConnected"/>
+        <pin num="5" name="NC" type="NotConnected"/>
+        <pin num="6" name="NC" type="NotConnected"/>
+        <pin num="7" name="NC" type="NotConnected"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="NC" type="NotConnected"/>
+        <pin num="10" name="VMA" type="unspc"/>
+        <pin num="11" name="VMA" type="unspc"/>
+        <pin num="12" name="NC" type="NotConnected"/>
+        <pin num="13" name="OUTA+" type="output"/>
+        <pin num="14" name="OUTA+" type="output"/>
+        <pin num="15" name="RSAGND" type="power_in"/>
+        <pin num="16" name="RSAGND" type="power_in"/>
+        <pin num="17" name="OUTA-" type="output"/>
+        <pin num="18" name="OUTA-" type="output"/>
+        <pin num="19" name="OUTB-" type="output"/>
+        <pin num="20" name="OUTB-" type="output"/>
+        <pin num="21" name="RSBGND" type="power_in"/>
+        <pin num="22" name="RSBGND" type="power_in"/>
+        <pin num="23" name="OUTB+" type="output"/>
+        <pin num="24" name="OUTB+" type="output"/>
+        <pin num="25" name="NC" type="NotConnected"/>
+        <pin num="26" name="VMB" type="unspc"/>
+        <pin num="27" name="VMB" type="unspc"/>
+        <pin num="28" name="NC" type="NotConnected"/>
+        <pin num="29" name="GND" type="power_in"/>
+        <pin num="30" name="GND" type="power_in"/>
+        <pin num="31" name="VREFB" type="power_in"/>
+        <pin num="32" name="VREFA" type="power_in"/>
+        <pin num="33" name="VCC" type="power_in"/>
+        <pin num="34" name="VCC" type="power_in"/>
+        <pin num="35" name="OSCM" type="unspc"/>
+        <pin num="36" name="NC" type="NotConnected"/>
+        <pin num="37" name="NC" type="NotConnected"/>
+        <pin num="38" name="NC" type="NotConnected"/>
+        <pin num="39" name="PWMA" type="unspc"/>
+        <pin num="40" name="PWMB" type="unspc"/>
+        <pin num="41" name="INA1" type="input"/>
+        <pin num="42" name="INA2" type="input"/>
+        <pin num="43" name="INB1" type="input"/>
+        <pin num="44" name="INB2" type="input"/>
+        <pin num="45" name="NC" type="NotConnected"/>
+        <pin num="46" name="NC" type="NotConnected"/>
+        <pin num="47" name="LO1" type="BiDi"/>
+        <pin num="48" name="LO2" type="BiDi"/>
+        <pin num="49" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Male">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LED" part="WS2812B">
+      <description>RGB LED with integrated controller</description>
+      <docs>https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf</docs>
+      <footprints>
+        <fp>LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">WS2812B</field>
+        <field name="Footprint">LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="DOUT" type="output"/>
+        <pin num="3" name="VSS" type="power_in"/>
+        <pin num="4" name="DIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="AP1501A-50K5G-13">
+      <description>Switching Voltage Regulators BUCK CONV PWM 150KHz 5A 4.5-40V 1.23V</description>
+      <docs>https://www.arrow.com/en/products/ap1501a-50k5g-13/diodes-incorporated</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">AP1501A-50K5G-13</field>
+        <field name="Footprint">AP1501A50K5G13</field>
+        <field name="Datasheet">https://www.arrow.com/en/products/ap1501a-50k5g-13/diodes-incorporated</field>
+        <field name="Description">Switching Voltage Regulators BUCK CONV PWM 150KHz 5A 4.5-40V 1.23V</field>
+        <field name="Height">4.85</field>
+        <field name="Mouser Part Number">621-AP1501A-50K5G-13</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP1501A-50K5G-13?qs=oUsD4qhOtFz5JD%252BZT9Fsfg%3D%3D</field>
+        <field name="Manufacturer_Name">Diodes Inc.</field>
+        <field name="Manufacturer_Part_Number">AP1501A-50K5G-13</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="passive"/>
+        <pin num="2" name="OUTPUT" type="passive"/>
+        <pin num="3" name="GND_1" type="passive"/>
+        <pin num="4" name="FB" type="passive"/>
+        <pin num="5" name="SD" type="passive"/>
+        <pin num="6" name="GND_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="AP2112K-3.3TRG1">
+      <description>600mA 3.3V LDO Regulator Enable SOT23-5 DiodesZetex AP2112K-3.3TRG1, LDO Voltage Regulator, 3.3 V +/-1.5%, 2.5  6 Vin, 5-Pin SOT-23</description>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">AP2112K-3.3TRG1</field>
+        <field name="Footprint">SOT95P282X130-5N</field>
+        <field name="Description">600mA 3.3V LDO Regulator Enable SOT23-5 DiodesZetex AP2112K-3.3TRG1, LDO Voltage Regulator, 3.3 V +/-1.5%, 2.5  6 Vin, 5-Pin SOT-23</field>
+        <field name="Height">1.3</field>
+        <field name="Mouser Part Number">621-AP2112K-3.3TRG1</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP2112K-33TRG1?qs=x6A8l6qLYDDPYHosCdzh%2FA%3D%3D</field>
+        <field name="Manufacturer_Name">Diodes Inc.</field>
+        <field name="Manufacturer_Part_Number">AP2112K-3.3TRG1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="EN" type="passive"/>
+        <pin num="4" name="ADJ/NC" type="passive"/>
+        <pin num="5" name="VOUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="ATSAMD21E17D-AUT">
+      <description>ARM Microcontrollers - MCU 32TQFP IND TEMP, GREEN,1.6-3.6V,48MHz</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/ATSAMD21E17D-AUT.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">ATSAMD21E17D-AUT</field>
+        <field name="Footprint">QFP80P900X900X120-32N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/ATSAMD21E17D-AUT.pdf</field>
+        <field name="Description">ARM Microcontrollers - MCU 32TQFP IND TEMP, GREEN,1.6-3.6V,48MHz</field>
+        <field name="Height">1.2</field>
+        <field name="Mouser Part Number">556-ATSAMD21E17D-AUT</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Microchip-Technology-Atmel/ATSAMD21E17D-AUT?qs=byeeYqUIh0O8S6Jd8zVPrw%3D%3D</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">ATSAMD21E17D-AUT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PA00" type="passive"/>
+        <pin num="2" name="PA01" type="passive"/>
+        <pin num="3" name="PA02" type="passive"/>
+        <pin num="4" name="PA03" type="passive"/>
+        <pin num="5" name="PA04" type="passive"/>
+        <pin num="6" name="PA05" type="passive"/>
+        <pin num="7" name="PA06" type="passive"/>
+        <pin num="8" name="PA07" type="passive"/>
+        <pin num="9" name="VDDANA" type="passive"/>
+        <pin num="10" name="GND_1" type="passive"/>
+        <pin num="11" name="PA08" type="passive"/>
+        <pin num="12" name="PA09" type="passive"/>
+        <pin num="13" name="PA10" type="passive"/>
+        <pin num="14" name="PA11" type="passive"/>
+        <pin num="15" name="PA14" type="passive"/>
+        <pin num="16" name="PA15" type="passive"/>
+        <pin num="17" name="PA16" type="passive"/>
+        <pin num="18" name="PA17" type="passive"/>
+        <pin num="19" name="PA18" type="passive"/>
+        <pin num="20" name="PA19" type="passive"/>
+        <pin num="21" name="PA22" type="passive"/>
+        <pin num="22" name="PA23" type="passive"/>
+        <pin num="23" name="PA24" type="passive"/>
+        <pin num="24" name="PA25" type="passive"/>
+        <pin num="25" name="PA27" type="passive"/>
+        <pin num="26" name="~RESET" type="passive"/>
+        <pin num="27" name="PA28" type="passive"/>
+        <pin num="28" name="GND_2" type="passive"/>
+        <pin num="29" name="VDDCORE" type="passive"/>
+        <pin num="30" name="VDDIN" type="passive"/>
+        <pin num="31" name="PA30" type="passive"/>
+        <pin num="32" name="PA31" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="USB4105-GF-A" part="USB4105-GF-A">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB4105-GF-A</field>
+        <field name="Footprint">GCT_USB4105-GF-A</field>
+        <field name="PARTREV">A3</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">3.31 mm</field>
+        <field name="MANUFACTURER">GCT</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+      </fields>
+      <pins>
+        <pin num="A5" name="CC1" type="BiDi"/>
+        <pin num="A6" name="DP1" type="BiDi"/>
+        <pin num="A7" name="DN1" type="BiDi"/>
+        <pin num="A8" name="SBU1" type="BiDi"/>
+        <pin num="A1_B12" name="GND" type="power_in"/>
+        <pin num="A4_B9" name="VBUS" type="power_in"/>
+        <pin num="B5" name="CC2" type="BiDi"/>
+        <pin num="B6" name="DP2" type="BiDi"/>
+        <pin num="B7" name="DN2" type="BiDi"/>
+        <pin num="B8" name="SBU2" type="BiDi"/>
+        <pin num="B1_A12" name="GND" type="power_in"/>
+        <pin num="B4_A9" name="VBUS" type="power_in"/>
+        <pin num="S1" name="SHELL_GND" type="power_in"/>
+        <pin num="S2" name="SHELL_GND" type="power_in"/>
+        <pin num="S3" name="SHELL_GND" type="power_in"/>
+        <pin num="S4" name="SHELL_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="pspice" part="CAP">
+      <aliases>
+        <alias>C</alias>
+      </aliases>
+      <description>Capacitor symbol for simulation only</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CAP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="2021-06-21_15-40-13">
+      <uri>C:\Users\Lian Li Spare\Downloads\ul_TB67H420FTGEL\KiCAD\2021-06-21_15-40-13\2021-06-21_15-40-13.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="LED">
+      <uri>C:\Program Files\KiCad\share\kicad\library/LED.lib</uri>
+    </library>
+    <library logical="SamacSys_Parts">
+      <uri>C:/Projects/KiCad Libraries/SamacSys_Parts.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+    <library logical="USB4105-GF-A">
+      <uri>C:/Users/Lian Li Spare/Downloads/USB4105-GF-A/USB4105-GF-A.lib</uri>
+    </library>
+    <library logical="pspice">
+      <uri>C:\Program Files\KiCad\share\kicad\library/pspice.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="D2" pin="2"/>
+      <node ref="J2" pin="3"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C13" pin="2"/>
+      <node ref="J1" pin="S4"/>
+      <node ref="J1" pin="S3"/>
+      <node ref="J1" pin="S2"/>
+      <node ref="J1" pin="S1"/>
+      <node ref="J1" pin="B1_A12"/>
+      <node ref="J1" pin="A1_B12"/>
+      <node ref="R2" pin="2"/>
+      <node ref="IC2" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="IC1" pin="28"/>
+      <node ref="C3" pin="2"/>
+      <node ref="D1" pin="3"/>
+      <node ref="C2" pin="2"/>
+      <node ref="IC1" pin="10"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="IC3" pin="6"/>
+      <node ref="IC3" pin="5"/>
+      <node ref="IC3" pin="3"/>
+      <node ref="J5" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="U1" pin="29"/>
+      <node ref="U1" pin="30"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U1" pin="49"/>
+      <node ref="C7" pin="2"/>
+    </net>
+    <net code="2" name="PWR_IN">
+      <node ref="U1" pin="11"/>
+      <node ref="C12" pin="1"/>
+      <node ref="U1" pin="10"/>
+      <node ref="C14" pin="1"/>
+      <node ref="IC3" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="U1" pin="26"/>
+      <node ref="U1" pin="27"/>
+      <node ref="C15" pin="1"/>
+    </net>
+    <net code="3" name="+3V3">
+      <node ref="IC2" pin="5"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="4" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1"/>
+      <node ref="IC1" pin="30"/>
+    </net>
+    <net code="5" name="NRST">
+      <node ref="SW1" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="IC1" pin="26"/>
+    </net>
+    <net code="6" name="Net-(C7-Pad1)">
+      <node ref="IC1" pin="9"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="7" name="D+">
+      <node ref="J1" pin="B6"/>
+      <node ref="IC1" pin="24"/>
+      <node ref="J1" pin="A6"/>
+    </net>
+    <net code="8" name="D-">
+      <node ref="J1" pin="B7"/>
+      <node ref="IC1" pin="23"/>
+      <node ref="J1" pin="A7"/>
+    </net>
+    <net code="9" name="Net-(D2-Pad1)">
+      <node ref="IC3" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="10" name="HBMODE">
+      <node ref="U1" pin="2"/>
+      <node ref="IC1" pin="11"/>
+    </net>
+    <net code="11" name="Net-(C5-Pad1)">
+      <node ref="IC1" pin="29"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="12" name="INA2">
+      <node ref="IC1" pin="6"/>
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="13" name="INA1">
+      <node ref="IC1" pin="5"/>
+      <node ref="U1" pin="41"/>
+    </net>
+    <net code="14" name="INB2">
+      <node ref="U1" pin="44"/>
+      <node ref="IC1" pin="8"/>
+    </net>
+    <net code="15" name="INB1">
+      <node ref="U1" pin="43"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="16" name="PWMA">
+      <node ref="IC1" pin="3"/>
+      <node ref="U1" pin="39"/>
+    </net>
+    <net code="17" name="PWMB">
+      <node ref="U1" pin="40"/>
+      <node ref="IC1" pin="4"/>
+    </net>
+    <net code="18" name="+5V">
+      <node ref="C13" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="IC2" pin="1"/>
+      <node ref="IC3" pin="4"/>
+      <node ref="J1" pin="B4_A9"/>
+      <node ref="L1" pin="2"/>
+      <node ref="IC2" pin="3"/>
+      <node ref="J1" pin="A4_B9"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="19" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="20" name="Net-(IC1-Pad31)">
+      <node ref="IC1" pin="31"/>
+    </net>
+    <net code="21" name="Net-(IC1-Pad32)">
+      <node ref="IC1" pin="32"/>
+    </net>
+    <net code="22" name="Net-(IC1-Pad17)">
+      <node ref="IC1" pin="17"/>
+    </net>
+    <net code="23" name="Net-(IC1-Pad18)">
+      <node ref="IC1" pin="18"/>
+    </net>
+    <net code="24" name="Net-(IC1-Pad19)">
+      <node ref="IC1" pin="19"/>
+    </net>
+    <net code="25" name="Net-(IC1-Pad20)">
+      <node ref="IC1" pin="20"/>
+    </net>
+    <net code="26" name="Net-(IC1-Pad21)">
+      <node ref="IC1" pin="21"/>
+    </net>
+    <net code="27" name="Net-(IC1-Pad22)">
+      <node ref="IC1" pin="22"/>
+    </net>
+    <net code="28" name="Net-(IC1-Pad16)">
+      <node ref="IC1" pin="16"/>
+    </net>
+    <net code="29" name="Net-(IC1-Pad15)">
+      <node ref="IC1" pin="15"/>
+    </net>
+    <net code="30" name="Net-(IC1-Pad14)">
+      <node ref="IC1" pin="14"/>
+    </net>
+    <net code="31" name="Net-(IC1-Pad13)">
+      <node ref="IC1" pin="13"/>
+    </net>
+    <net code="32" name="Net-(IC1-Pad12)">
+      <node ref="IC1" pin="12"/>
+    </net>
+    <net code="33" name="Net-(IC1-Pad27)">
+      <node ref="IC1" pin="27"/>
+    </net>
+    <net code="34" name="Net-(IC1-Pad25)">
+      <node ref="IC1" pin="25"/>
+    </net>
+    <net code="35" name="Net-(J1-PadB8)">
+      <node ref="J1" pin="B8"/>
+    </net>
+    <net code="36" name="Net-(J1-PadA8)">
+      <node ref="J1" pin="A8"/>
+    </net>
+    <net code="37" name="Net-(J1-PadA5)">
+      <node ref="J1" pin="A5"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="38" name="Net-(IC2-Pad4)">
+      <node ref="IC2" pin="4"/>
+    </net>
+    <net code="39" name="Net-(J1-PadB5)">
+      <node ref="R2" pin="1"/>
+      <node ref="J1" pin="B5"/>
+    </net>
+    <net code="40" name="RGB_DATA">
+      <node ref="D1" pin="4"/>
+    </net>
+    <net code="41" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="42" name="RGB_PWR">
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="43" name="VCC_Driver">
+      <node ref="R4" pin="2"/>
+      <node ref="R8" pin="1"/>
+      <node ref="U1" pin="33"/>
+      <node ref="U1" pin="34"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R7" pin="1"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="44" name="OSCM">
+      <node ref="C8" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="35"/>
+    </net>
+    <net code="45" name="LO1">
+      <node ref="U1" pin="47"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="46" name="LO2">
+      <node ref="IC1" pin="2"/>
+      <node ref="U1" pin="48"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="47" name="VREF">
+      <node ref="R5" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U1" pin="31"/>
+      <node ref="U1" pin="32"/>
+    </net>
+    <net code="48" name="MotorB_Pos">
+      <node ref="U1" pin="19"/>
+      <node ref="J4" pin="1"/>
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="49" name="MotorB_Neg">
+      <node ref="J4" pin="2"/>
+      <node ref="U1" pin="24"/>
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="50" name="MotorA_Pos">
+      <node ref="J3" pin="1"/>
+      <node ref="U1" pin="13"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="51" name="MotorA_Neg">
+      <node ref="U1" pin="18"/>
+      <node ref="J3" pin="2"/>
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="52" name="TBLKAB">
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="53" name="Net-(U1-Pad36)">
+      <node ref="U1" pin="36"/>
+    </net>
+    <net code="54" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="55" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="56" name="H-BridgeA_GND">
+      <node ref="U1" pin="15"/>
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="57" name="H-BridgeB_GND">
+      <node ref="U1" pin="21"/>
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="58" name="Net-(U1-Pad25)">
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="59" name="Net-(U1-Pad28)">
+      <node ref="U1" pin="28"/>
+    </net>
+    <net code="60" name="Net-(U1-Pad37)">
+      <node ref="U1" pin="37"/>
+    </net>
+    <net code="61" name="Net-(U1-Pad38)">
+      <node ref="U1" pin="38"/>
+    </net>
+    <net code="62" name="Net-(U1-Pad45)">
+      <node ref="U1" pin="45"/>
+    </net>
+    <net code="63" name="Net-(U1-Pad46)">
+      <node ref="U1" pin="46"/>
+    </net>
+    <net code="64" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="65" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="66" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="67" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="68" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+  </nets>
+</export>
