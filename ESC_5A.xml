@@ -2,13 +2,13 @@
 <export version="D">
   <design>
     <source>C:\Projects\ESC_5A_PCB\ESC_5A.sch</source>
-    <date>6/21/2021 4:45:58 PM</date>
+    <date>6/22/2021 12:58:27 PM</date>
     <tool>Eeschema (5.1.9)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
-        <company/>
-        <rev/>
+        <title>ESC_5A</title>
+        <company>50 Day</company>
+        <rev>Rev One</rev>
         <date/>
         <source>ESC_5A.sch</source>
         <comment number="1" value=""/>
@@ -34,7 +34,7 @@
   <components>
     <comp ref="J1">
       <value>USB4105-GF-A</value>
-      <footprint>GCT_USB4105-GF-A</footprint>
+      <footprint>USB4105-GF-A:GCT_USB4105-GF-A</footprint>
       <fields>
         <field name="MANUFACTURER">GCT</field>
         <field name="MAXIMUM_PACKAGE_HEIGHT">3.31 mm</field>
@@ -52,24 +52,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60CCE587</tstamp>
     </comp>
-    <comp ref="IC2">
-      <value>AP2112K-3.3TRG1</value>
-      <footprint>SOT95P282X130-5N</footprint>
-      <fields>
-        <field name="Description">600mA 3.3V LDO Regulator Enable SOT23-5 DiodesZetex AP2112K-3.3TRG1, LDO Voltage Regulator, 3.3 V +/-1.5%, 2.5  6 Vin, 5-Pin SOT-23</field>
-        <field name="Height">1.3</field>
-        <field name="Manufacturer_Name">Diodes Inc.</field>
-        <field name="Manufacturer_Part_Number">AP2112K-3.3TRG1</field>
-        <field name="Mouser Part Number">621-AP2112K-3.3TRG1</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP2112K-33TRG1?qs=x6A8l6qLYDDPYHosCdzh%2FA%3D%3D</field>
-      </fields>
-      <libsource lib="SamacSys_Parts" part="AP2112K-3.3TRG1" description="600mA 3.3V LDO Regulator Enable SOT23-5 DiodesZetex AP2112K-3.3TRG1, LDO Voltage Regulator, 3.3 V +/-1.5%, 2.5  6 Vin, 5-Pin SOT-23"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60CD2456</tstamp>
-    </comp>
     <comp ref="IC1">
       <value>ATSAMD21E17D-AUT</value>
-      <footprint>QFP80P900X900X120-32N</footprint>
+      <footprint>SamacSys_Parts:QFP80P900X900X120-32N</footprint>
       <datasheet>https://componentsearchengine.com/Datasheets/1/ATSAMD21E17D-AUT.pdf</datasheet>
       <fields>
         <field name="Description">ARM Microcontrollers - MCU 32TQFP IND TEMP, GREEN,1.6-3.6V,48MHz</field>
@@ -89,20 +74,6 @@
       <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60CDE3B6</tstamp>
-    </comp>
-    <comp ref="C2">
-      <value>10uF</value>
-      <datasheet>~</datasheet>
-      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60CE2313</tstamp>
-    </comp>
-    <comp ref="C3">
-      <value>1uF</value>
-      <datasheet>~</datasheet>
-      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>60CE3EE9</tstamp>
     </comp>
     <comp ref="D1">
       <value>WS2812B</value>
@@ -156,7 +127,7 @@
     </comp>
     <comp ref="IC3">
       <value>AP1501A-50K5G-13</value>
-      <footprint>AP1501A50K5G13</footprint>
+      <footprint>SamacSys_Parts:AP1501A50K5G13</footprint>
       <datasheet>https://www.arrow.com/en/products/ap1501a-50k5g-13/diodes-incorporated</datasheet>
       <fields>
         <field name="Description">Switching Voltage Regulators BUCK CONV PWM 150KHz 5A 4.5-40V 1.23V</field>
@@ -212,9 +183,71 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60D0906D</tstamp>
     </comp>
+    <comp ref="IC2">
+      <value>AP2112M-3.3TRG1</value>
+      <footprint>SamacSys_Parts:SOIC127P600X170-8N</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AP2112.pdf</datasheet>
+      <fields>
+        <field name="Description">LDO Voltage Regulators LDO CMOS HiCurr</field>
+        <field name="Height">1.7</field>
+        <field name="Manufacturer_Name">Diodes Inc.</field>
+        <field name="Manufacturer_Part_Number">AP2112M-3.3TRG1</field>
+        <field name="Mouser Part Number">621-AP2112M-3.3TRG1</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP2112M-33TRG1?qs=5V6w%252Be2aIqa1YM8VADFBsQ%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="AP2112M-3.3TRG1" description="LDO Voltage Regulators LDO CMOS HiCurr"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D2104E</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CE3EE9</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60CE2313</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>PCS2512DR0100ET</value>
+      <footprint>SamacSys_Parts:RESC6430X66N</footprint>
+      <datasheet>https://rs.componentsearchengine.com/Datasheets/2/PCS2512DR0100ET.pdf</datasheet>
+      <fields>
+        <field name="Description">Current Sense Resistors - SMD</field>
+        <field name="Height">0.664</field>
+        <field name="Manufacturer_Name">Ohmite</field>
+        <field name="Manufacturer_Part_Number">PCS2512DR0100ET</field>
+        <field name="Mouser Part Number">588-PCS2512DR0100ET</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Ohmite/PCS2512DR0100ET?qs=Zz7%252BYVVL6bF4W%2Fc9YcyG%2Fg%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="PCS2512DR0100ET" description="Current Sense Resistors - SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D79390</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>PCS2512DR0100ET</value>
+      <footprint>SamacSys_Parts:RESC6430X66N</footprint>
+      <datasheet>https://rs.componentsearchengine.com/Datasheets/2/PCS2512DR0100ET.pdf</datasheet>
+      <fields>
+        <field name="Description">Current Sense Resistors - SMD</field>
+        <field name="Height">0.664</field>
+        <field name="Manufacturer_Name">Ohmite</field>
+        <field name="Manufacturer_Part_Number">PCS2512DR0100ET</field>
+        <field name="Mouser Part Number">588-PCS2512DR0100ET</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Ohmite/PCS2512DR0100ET?qs=Zz7%252BYVVL6bF4W%2Fc9YcyG%2Fg%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="PCS2512DR0100ET" description="Current Sense Resistors - SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D7A108</tstamp>
+    </comp>
     <comp ref="U1">
       <value>TB67H420FTG_EL</value>
-      <footprint>P-VQFN48-0707-0p50-004_TOS</footprint>
+      <footprint>footprints:TB67H420FTG_EL</footprint>
       <libsource lib="2021-06-21_15-40-13" part="TB67H420FTG_EL" description=""/>
       <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
       <tstamp>60E1079C</tstamp>
@@ -305,6 +338,54 @@
       <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
       <tstamp>60FD4AF3</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>.01</value>
+      <footprint>SamacSys_Parts:RESC6430X66N</footprint>
+      <datasheet>https://rs.componentsearchengine.com/Datasheets/2/PCS2512DR0100ET.pdf</datasheet>
+      <fields>
+        <field name="Description">Current Sense Resistors - SMD</field>
+        <field name="Height">0.664</field>
+        <field name="Manufacturer_Name">Ohmite</field>
+        <field name="Manufacturer_Part_Number">PCS2512DR0100ET</field>
+        <field name="Mouser Part Number">588-PCS2512DR0100ET</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Ohmite/PCS2512DR0100ET?qs=Zz7%252BYVVL6bF4W%2Fc9YcyG%2Fg%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="PCS2512DR0100ET" description="Current Sense Resistors - SMD"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60D7DF2B</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>.01</value>
+      <footprint>SamacSys_Parts:RESC6430X66N</footprint>
+      <datasheet>https://rs.componentsearchengine.com/Datasheets/2/PCS2512DR0100ET.pdf</datasheet>
+      <fields>
+        <field name="Description">Current Sense Resistors - SMD</field>
+        <field name="Height">0.664</field>
+        <field name="Manufacturer_Name">Ohmite</field>
+        <field name="Manufacturer_Part_Number">PCS2512DR0100ET</field>
+        <field name="Mouser Part Number">588-PCS2512DR0100ET</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Ohmite/PCS2512DR0100ET?qs=Zz7%252BYVVL6bF4W%2Fc9YcyG%2Fg%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="PCS2512DR0100ET" description="Current Sense Resistors - SMD"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60D7DF37</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>.01</value>
+      <footprint>SamacSys_Parts:RESC6430X66N</footprint>
+      <datasheet>https://rs.componentsearchengine.com/Datasheets/2/PCS2512DR0100ET.pdf</datasheet>
+      <fields>
+        <field name="Description">Current Sense Resistors - SMD</field>
+        <field name="Height">0.664</field>
+        <field name="Manufacturer_Name">Ohmite</field>
+        <field name="Manufacturer_Part_Number">PCS2512DR0100ET</field>
+        <field name="Mouser Part Number">588-PCS2512DR0100ET</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Ohmite/PCS2512DR0100ET?qs=Zz7%252BYVVL6bF4W%2Fc9YcyG%2Fg%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="PCS2512DR0100ET" description="Current Sense Resistors - SMD"/>
+      <sheetpath names="/Motor Driver/" tstamps="/60E06626/"/>
+      <tstamp>60DD4ABF</tstamp>
     </comp>
   </components>
   <libparts>
@@ -495,25 +576,30 @@
         <pin num="6" name="GND_2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="SamacSys_Parts" part="AP2112K-3.3TRG1">
-      <description>600mA 3.3V LDO Regulator Enable SOT23-5 DiodesZetex AP2112K-3.3TRG1, LDO Voltage Regulator, 3.3 V +/-1.5%, 2.5  6 Vin, 5-Pin SOT-23</description>
+    <libpart lib="SamacSys_Parts" part="AP2112M-3.3TRG1">
+      <description>LDO Voltage Regulators LDO CMOS HiCurr</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AP2112.pdf</docs>
       <fields>
         <field name="Reference">IC</field>
-        <field name="Value">AP2112K-3.3TRG1</field>
-        <field name="Footprint">SOT95P282X130-5N</field>
-        <field name="Description">600mA 3.3V LDO Regulator Enable SOT23-5 DiodesZetex AP2112K-3.3TRG1, LDO Voltage Regulator, 3.3 V +/-1.5%, 2.5  6 Vin, 5-Pin SOT-23</field>
-        <field name="Height">1.3</field>
-        <field name="Mouser Part Number">621-AP2112K-3.3TRG1</field>
-        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP2112K-33TRG1?qs=x6A8l6qLYDDPYHosCdzh%2FA%3D%3D</field>
+        <field name="Value">AP2112M-3.3TRG1</field>
+        <field name="Footprint">SOIC127P600X170-8N</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/AP2112.pdf</field>
+        <field name="Description">LDO Voltage Regulators LDO CMOS HiCurr</field>
+        <field name="Height">1.7</field>
+        <field name="Mouser Part Number">621-AP2112M-3.3TRG1</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AP2112M-33TRG1?qs=5V6w%252Be2aIqa1YM8VADFBsQ%3D%3D</field>
         <field name="Manufacturer_Name">Diodes Inc.</field>
-        <field name="Manufacturer_Part_Number">AP2112K-3.3TRG1</field>
+        <field name="Manufacturer_Part_Number">AP2112M-3.3TRG1</field>
       </fields>
       <pins>
-        <pin num="1" name="VIN" type="passive"/>
-        <pin num="2" name="GND" type="passive"/>
-        <pin num="3" name="EN" type="passive"/>
-        <pin num="4" name="ADJ/NC" type="passive"/>
-        <pin num="5" name="VOUT" type="passive"/>
+        <pin num="1" name="VOUT" type="passive"/>
+        <pin num="2" name="NC_1" type="passive"/>
+        <pin num="3" name="NC_2" type="passive"/>
+        <pin num="4" name="NC_3" type="passive"/>
+        <pin num="5" name="EN" type="passive"/>
+        <pin num="6" name="GND_1" type="passive"/>
+        <pin num="7" name="GND_2" type="passive"/>
+        <pin num="8" name="VIN" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="SamacSys_Parts" part="ATSAMD21E17D-AUT">
@@ -564,6 +650,26 @@
         <pin num="30" name="VDDIN" type="passive"/>
         <pin num="31" name="PA30" type="passive"/>
         <pin num="32" name="PA31" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="PCS2512DR0100ET">
+      <description>Current Sense Resistors - SMD</description>
+      <docs>https://rs.componentsearchengine.com/Datasheets/2/PCS2512DR0100ET.pdf</docs>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">PCS2512DR0100ET</field>
+        <field name="Footprint">RESC6430X66N</field>
+        <field name="Datasheet">https://rs.componentsearchengine.com/Datasheets/2/PCS2512DR0100ET.pdf</field>
+        <field name="Description">Current Sense Resistors - SMD</field>
+        <field name="Height">0.664</field>
+        <field name="Mouser Part Number">588-PCS2512DR0100ET</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Ohmite/PCS2512DR0100ET?qs=Zz7%252BYVVL6bF4W%2Fc9YcyG%2Fg%3D%3D</field>
+        <field name="Manufacturer_Name">Ohmite</field>
+        <field name="Manufacturer_Part_Number">PCS2512DR0100ET</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Switch" part="SW_Push">
@@ -625,7 +731,7 @@
   </libparts>
   <libraries>
     <library logical="2021-06-21_15-40-13">
-      <uri>C:\Users\Lian Li Spare\Downloads\ul_TB67H420FTGEL\KiCAD\2021-06-21_15-40-13\2021-06-21_15-40-13.lib</uri>
+      <uri>C:/Users/Lian Li Spare/Downloads/ul_TB67H420FTGEL/KiCAD/2021-06-21_15-40-13/2021-06-21_15-40-13.lib</uri>
     </library>
     <library logical="Connector">
       <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
@@ -650,295 +756,304 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="D2" pin="2"/>
-      <node ref="J2" pin="3"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="R6" pin="1"/>
-      <node ref="C13" pin="2"/>
-      <node ref="J1" pin="S4"/>
-      <node ref="J1" pin="S3"/>
-      <node ref="J1" pin="S2"/>
-      <node ref="J1" pin="S1"/>
-      <node ref="J1" pin="B1_A12"/>
-      <node ref="J1" pin="A1_B12"/>
-      <node ref="R2" pin="2"/>
-      <node ref="IC2" pin="2"/>
-      <node ref="C4" pin="2"/>
+    <net code="1" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C13" pin="1"/>
+      <node ref="L1" pin="2"/>
+      <node ref="IC3" pin="4"/>
+      <node ref="J1" pin="A4_B9"/>
+      <node ref="J1" pin="B4_A9"/>
+      <node ref="C1" pin="1"/>
+      <node ref="IC2" pin="5"/>
+      <node ref="IC2" pin="8"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="3" name="GND">
       <node ref="R1" pin="2"/>
-      <node ref="IC1" pin="28"/>
-      <node ref="C3" pin="2"/>
-      <node ref="D1" pin="3"/>
-      <node ref="C2" pin="2"/>
-      <node ref="IC1" pin="10"/>
+      <node ref="J1" pin="A1_B12"/>
+      <node ref="J1" pin="B1_A12"/>
+      <node ref="J1" pin="S1"/>
+      <node ref="J1" pin="S2"/>
+      <node ref="J1" pin="S3"/>
+      <node ref="J1" pin="S4"/>
       <node ref="C1" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="C15" pin="2"/>
-      <node ref="C14" pin="2"/>
-      <node ref="SW1" pin="2"/>
-      <node ref="IC3" pin="6"/>
+      <node ref="C8" pin="2"/>
       <node ref="IC3" pin="5"/>
-      <node ref="IC3" pin="3"/>
-      <node ref="J5" pin="2"/>
-      <node ref="C12" pin="2"/>
-      <node ref="U1" pin="29"/>
-      <node ref="U1" pin="30"/>
-      <node ref="C5" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="IC1" pin="10"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="IC2" pin="6"/>
+      <node ref="IC2" pin="7"/>
+      <node ref="IC1" pin="28"/>
       <node ref="U1" pin="8"/>
+      <node ref="D1" pin="3"/>
       <node ref="U1" pin="49"/>
       <node ref="C7" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="J5" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="U1" pin="29"/>
+      <node ref="U1" pin="30"/>
+      <node ref="IC3" pin="3"/>
+      <node ref="D2" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="J2" pin="3"/>
+      <node ref="IC3" pin="6"/>
     </net>
-    <net code="2" name="PWR_IN">
-      <node ref="U1" pin="11"/>
+    <net code="4" name="LO1">
+      <node ref="IC1" pin="1"/>
+      <node ref="R7" pin="2"/>
+      <node ref="U1" pin="47"/>
+    </net>
+    <net code="5" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1"/>
+      <node ref="IC1" pin="9"/>
+    </net>
+    <net code="6" name="HBMODE">
+      <node ref="IC1" pin="11"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="7" name="Net-(D2-Pad1)">
+      <node ref="L1" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="IC3" pin="2"/>
+    </net>
+    <net code="8" name="PWR_IN">
       <node ref="C12" pin="1"/>
-      <node ref="U1" pin="10"/>
       <node ref="C14" pin="1"/>
       <node ref="IC3" pin="1"/>
-      <node ref="J5" pin="1"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U1" pin="11"/>
       <node ref="U1" pin="26"/>
+      <node ref="J5" pin="1"/>
       <node ref="U1" pin="27"/>
       <node ref="C15" pin="1"/>
     </net>
-    <net code="3" name="+3V3">
-      <node ref="IC2" pin="5"/>
-      <node ref="C3" pin="1"/>
-      <node ref="R3" pin="1"/>
-      <node ref="C2" pin="1"/>
+    <net code="9" name="ADC_VREFB">
+      <node ref="R11" pin="1"/>
+      <node ref="U1" pin="19"/>
+      <node ref="U1" pin="20"/>
+      <node ref="IC1" pin="5"/>
     </net>
-    <net code="4" name="Net-(C6-Pad1)">
-      <node ref="C6" pin="1"/>
-      <node ref="IC1" pin="30"/>
+    <net code="10" name="ADC_3">
+      <node ref="R13" pin="2"/>
+      <node ref="IC1" pin="6"/>
     </net>
-    <net code="5" name="NRST">
-      <node ref="SW1" pin="1"/>
-      <node ref="R3" pin="2"/>
-      <node ref="C4" pin="1"/>
-      <node ref="IC1" pin="26"/>
+    <net code="11" name="ADC_MUX_GND">
+      <node ref="J3" pin="2"/>
+      <node ref="R13" pin="1"/>
+      <node ref="U1" pin="17"/>
+      <node ref="IC1" pin="3"/>
+      <node ref="U1" pin="18"/>
     </net>
-    <net code="6" name="Net-(C7-Pad1)">
-      <node ref="IC1" pin="9"/>
-      <node ref="C7" pin="1"/>
+    <net code="12" name="Net-(R9-Pad2)">
+      <node ref="R9" pin="2"/>
     </net>
-    <net code="7" name="D+">
-      <node ref="J1" pin="B6"/>
+    <net code="13" name="Net-(R9-Pad1)">
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="14" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="15" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="16" name="ADC_2">
+      <node ref="IC1" pin="8"/>
+      <node ref="J4" pin="1"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="17" name="ADC_1">
+      <node ref="R12" pin="2"/>
+      <node ref="IC1" pin="7"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="18" name="ADC_VREFA">
+      <node ref="IC1" pin="4"/>
+      <node ref="R12" pin="1"/>
+      <node ref="U1" pin="13"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="19" name="Net-(IC2-Pad4)">
+      <node ref="IC2" pin="4"/>
+    </net>
+    <net code="20" name="Net-(IC2-Pad3)">
+      <node ref="IC2" pin="3"/>
+    </net>
+    <net code="21" name="Net-(IC2-Pad2)">
+      <node ref="IC2" pin="2"/>
+    </net>
+    <net code="22" name="D-">
+      <node ref="J1" pin="B7"/>
+      <node ref="J1" pin="A7"/>
+      <node ref="IC1" pin="23"/>
+    </net>
+    <net code="23" name="D+">
       <node ref="IC1" pin="24"/>
+      <node ref="J1" pin="B6"/>
       <node ref="J1" pin="A6"/>
     </net>
-    <net code="8" name="D-">
-      <node ref="J1" pin="B7"/>
-      <node ref="IC1" pin="23"/>
-      <node ref="J1" pin="A7"/>
+    <net code="24" name="NRST">
+      <node ref="C4" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="IC1" pin="26"/>
     </net>
-    <net code="9" name="Net-(D2-Pad1)">
-      <node ref="IC3" pin="2"/>
-      <node ref="D2" pin="1"/>
-      <node ref="L1" pin="1"/>
-    </net>
-    <net code="10" name="HBMODE">
-      <node ref="U1" pin="2"/>
-      <node ref="IC1" pin="11"/>
-    </net>
-    <net code="11" name="Net-(C5-Pad1)">
-      <node ref="IC1" pin="29"/>
-      <node ref="C5" pin="1"/>
-    </net>
-    <net code="12" name="INA2">
-      <node ref="IC1" pin="6"/>
-      <node ref="U1" pin="42"/>
-    </net>
-    <net code="13" name="INA1">
-      <node ref="IC1" pin="5"/>
-      <node ref="U1" pin="41"/>
-    </net>
-    <net code="14" name="INB2">
-      <node ref="U1" pin="44"/>
-      <node ref="IC1" pin="8"/>
-    </net>
-    <net code="15" name="INB1">
-      <node ref="U1" pin="43"/>
-      <node ref="IC1" pin="7"/>
-    </net>
-    <net code="16" name="PWMA">
-      <node ref="IC1" pin="3"/>
-      <node ref="U1" pin="39"/>
-    </net>
-    <net code="17" name="PWMB">
-      <node ref="U1" pin="40"/>
-      <node ref="IC1" pin="4"/>
-    </net>
-    <net code="18" name="+5V">
-      <node ref="C13" pin="1"/>
-      <node ref="C1" pin="1"/>
+    <net code="25" name="+3V3">
+      <node ref="R3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C3" pin="1"/>
       <node ref="IC2" pin="1"/>
-      <node ref="IC3" pin="4"/>
-      <node ref="J1" pin="B4_A9"/>
-      <node ref="L1" pin="2"/>
-      <node ref="IC2" pin="3"/>
-      <node ref="J1" pin="A4_B9"/>
-      <node ref="J2" pin="2"/>
     </net>
-    <net code="19" name="Net-(J2-Pad1)">
-      <node ref="J2" pin="1"/>
-    </net>
-    <net code="20" name="Net-(IC1-Pad31)">
+    <net code="26" name="Net-(IC1-Pad31)">
       <node ref="IC1" pin="31"/>
     </net>
-    <net code="21" name="Net-(IC1-Pad32)">
-      <node ref="IC1" pin="32"/>
-    </net>
-    <net code="22" name="Net-(IC1-Pad17)">
-      <node ref="IC1" pin="17"/>
-    </net>
-    <net code="23" name="Net-(IC1-Pad18)">
-      <node ref="IC1" pin="18"/>
-    </net>
-    <net code="24" name="Net-(IC1-Pad19)">
-      <node ref="IC1" pin="19"/>
-    </net>
-    <net code="25" name="Net-(IC1-Pad20)">
-      <node ref="IC1" pin="20"/>
-    </net>
-    <net code="26" name="Net-(IC1-Pad21)">
-      <node ref="IC1" pin="21"/>
-    </net>
-    <net code="27" name="Net-(IC1-Pad22)">
-      <node ref="IC1" pin="22"/>
-    </net>
-    <net code="28" name="Net-(IC1-Pad16)">
-      <node ref="IC1" pin="16"/>
-    </net>
-    <net code="29" name="Net-(IC1-Pad15)">
-      <node ref="IC1" pin="15"/>
-    </net>
-    <net code="30" name="Net-(IC1-Pad14)">
-      <node ref="IC1" pin="14"/>
-    </net>
-    <net code="31" name="Net-(IC1-Pad13)">
-      <node ref="IC1" pin="13"/>
-    </net>
-    <net code="32" name="Net-(IC1-Pad12)">
-      <node ref="IC1" pin="12"/>
-    </net>
-    <net code="33" name="Net-(IC1-Pad27)">
-      <node ref="IC1" pin="27"/>
-    </net>
-    <net code="34" name="Net-(IC1-Pad25)">
+    <net code="27" name="Net-(IC1-Pad25)">
       <node ref="IC1" pin="25"/>
     </net>
-    <net code="35" name="Net-(J1-PadB8)">
-      <node ref="J1" pin="B8"/>
+    <net code="28" name="Net-(IC1-Pad27)">
+      <node ref="IC1" pin="27"/>
     </net>
-    <net code="36" name="Net-(J1-PadA8)">
-      <node ref="J1" pin="A8"/>
+    <net code="29" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1"/>
+      <node ref="IC1" pin="29"/>
+    </net>
+    <net code="30" name="Net-(IC1-Pad32)">
+      <node ref="IC1" pin="32"/>
+    </net>
+    <net code="31" name="PWMA">
+      <node ref="IC1" pin="17"/>
+      <node ref="U1" pin="39"/>
+    </net>
+    <net code="32" name="PWMB">
+      <node ref="IC1" pin="18"/>
+      <node ref="U1" pin="40"/>
+    </net>
+    <net code="33" name="Net-(IC1-Pad19)">
+      <node ref="IC1" pin="19"/>
+    </net>
+    <net code="34" name="Net-(IC1-Pad20)">
+      <node ref="IC1" pin="20"/>
+    </net>
+    <net code="35" name="Net-(IC1-Pad21)">
+      <node ref="IC1" pin="21"/>
+    </net>
+    <net code="36" name="Net-(IC1-Pad22)">
+      <node ref="IC1" pin="22"/>
     </net>
     <net code="37" name="Net-(J1-PadA5)">
       <node ref="J1" pin="A5"/>
       <node ref="R1" pin="1"/>
     </net>
-    <net code="38" name="Net-(IC2-Pad4)">
-      <node ref="IC2" pin="4"/>
+    <net code="38" name="RGB_DATA">
+      <node ref="D1" pin="4"/>
     </net>
-    <net code="39" name="Net-(J1-PadB5)">
+    <net code="39" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="40" name="RGB_PWR">
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="41" name="Net-(J1-PadB8)">
+      <node ref="J1" pin="B8"/>
+    </net>
+    <net code="42" name="Net-(J1-PadB5)">
       <node ref="R2" pin="1"/>
       <node ref="J1" pin="B5"/>
     </net>
-    <net code="40" name="RGB_DATA">
-      <node ref="D1" pin="4"/>
+    <net code="43" name="Net-(J1-PadA8)">
+      <node ref="J1" pin="A8"/>
     </net>
-    <net code="41" name="Net-(D1-Pad2)">
-      <node ref="D1" pin="2"/>
+    <net code="44" name="INB2">
+      <node ref="U1" pin="44"/>
+      <node ref="IC1" pin="16"/>
     </net>
-    <net code="42" name="RGB_PWR">
-      <node ref="D1" pin="1"/>
+    <net code="45" name="INB1">
+      <node ref="U1" pin="43"/>
+      <node ref="IC1" pin="15"/>
     </net>
-    <net code="43" name="VCC_Driver">
-      <node ref="R4" pin="2"/>
-      <node ref="R8" pin="1"/>
-      <node ref="U1" pin="33"/>
-      <node ref="U1" pin="34"/>
+    <net code="46" name="INA2">
+      <node ref="U1" pin="42"/>
+      <node ref="IC1" pin="14"/>
+    </net>
+    <net code="47" name="INA1">
+      <node ref="IC1" pin="13"/>
+      <node ref="U1" pin="41"/>
+    </net>
+    <net code="48" name="Net-(IC1-Pad12)">
+      <node ref="IC1" pin="12"/>
+    </net>
+    <net code="49" name="Net-(C6-Pad1)">
+      <node ref="IC1" pin="30"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="50" name="VCC_Driver">
       <node ref="R5" pin="2"/>
-      <node ref="R7" pin="1"/>
       <node ref="C9" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="U1" pin="34"/>
+      <node ref="U1" pin="33"/>
     </net>
-    <net code="44" name="OSCM">
-      <node ref="C8" pin="1"/>
-      <node ref="R4" pin="1"/>
-      <node ref="U1" pin="35"/>
-    </net>
-    <net code="45" name="LO1">
-      <node ref="U1" pin="47"/>
-      <node ref="IC1" pin="1"/>
-      <node ref="R7" pin="2"/>
-    </net>
-    <net code="46" name="LO2">
-      <node ref="IC1" pin="2"/>
-      <node ref="U1" pin="48"/>
-      <node ref="R8" pin="2"/>
-    </net>
-    <net code="47" name="VREF">
-      <node ref="R5" pin="1"/>
+    <net code="51" name="VREF">
       <node ref="R6" pin="2"/>
+      <node ref="R5" pin="1"/>
       <node ref="U1" pin="31"/>
       <node ref="U1" pin="32"/>
     </net>
-    <net code="48" name="MotorB_Pos">
-      <node ref="U1" pin="19"/>
-      <node ref="J4" pin="1"/>
-      <node ref="U1" pin="20"/>
-    </net>
-    <net code="49" name="MotorB_Neg">
+    <net code="52" name="MotorB_Neg">
       <node ref="J4" pin="2"/>
-      <node ref="U1" pin="24"/>
       <node ref="U1" pin="23"/>
+      <node ref="U1" pin="24"/>
     </net>
-    <net code="50" name="MotorA_Pos">
-      <node ref="J3" pin="1"/>
-      <node ref="U1" pin="13"/>
-      <node ref="U1" pin="14"/>
+    <net code="53" name="Net-(U1-Pad46)">
+      <node ref="U1" pin="46"/>
     </net>
-    <net code="51" name="MotorA_Neg">
-      <node ref="U1" pin="18"/>
-      <node ref="J3" pin="2"/>
-      <node ref="U1" pin="17"/>
+    <net code="54" name="Net-(U1-Pad45)">
+      <node ref="U1" pin="45"/>
     </net>
-    <net code="52" name="TBLKAB">
-      <node ref="U1" pin="1"/>
+    <net code="55" name="Net-(U1-Pad38)">
+      <node ref="U1" pin="38"/>
     </net>
-    <net code="53" name="Net-(U1-Pad36)">
+    <net code="56" name="Net-(U1-Pad37)">
+      <node ref="U1" pin="37"/>
+    </net>
+    <net code="57" name="Net-(U1-Pad36)">
       <node ref="U1" pin="36"/>
     </net>
-    <net code="54" name="Net-(U1-Pad9)">
-      <node ref="U1" pin="9"/>
+    <net code="58" name="Net-(U1-Pad28)">
+      <node ref="U1" pin="28"/>
     </net>
-    <net code="55" name="Net-(U1-Pad12)">
-      <node ref="U1" pin="12"/>
+    <net code="59" name="Net-(U1-Pad25)">
+      <node ref="U1" pin="25"/>
     </net>
-    <net code="56" name="H-BridgeA_GND">
-      <node ref="U1" pin="15"/>
-      <node ref="U1" pin="16"/>
-    </net>
-    <net code="57" name="H-BridgeB_GND">
+    <net code="60" name="H-BridgeB_GND">
       <node ref="U1" pin="21"/>
       <node ref="U1" pin="22"/>
     </net>
-    <net code="58" name="Net-(U1-Pad25)">
-      <node ref="U1" pin="25"/>
+    <net code="61" name="OSCM">
+      <node ref="U1" pin="35"/>
+      <node ref="R4" pin="1"/>
+      <node ref="C8" pin="1"/>
     </net>
-    <net code="59" name="Net-(U1-Pad28)">
-      <node ref="U1" pin="28"/>
+    <net code="62" name="TBLKAB">
+      <node ref="U1" pin="1"/>
     </net>
-    <net code="60" name="Net-(U1-Pad37)">
-      <node ref="U1" pin="37"/>
-    </net>
-    <net code="61" name="Net-(U1-Pad38)">
-      <node ref="U1" pin="38"/>
-    </net>
-    <net code="62" name="Net-(U1-Pad45)">
-      <node ref="U1" pin="45"/>
-    </net>
-    <net code="63" name="Net-(U1-Pad46)">
-      <node ref="U1" pin="46"/>
+    <net code="63" name="LO2">
+      <node ref="R8" pin="2"/>
+      <node ref="U1" pin="48"/>
+      <node ref="IC1" pin="2"/>
     </net>
     <net code="64" name="Net-(U1-Pad3)">
       <node ref="U1" pin="3"/>
@@ -954,6 +1069,16 @@
     </net>
     <net code="68" name="Net-(U1-Pad7)">
       <node ref="U1" pin="7"/>
+    </net>
+    <net code="69" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="70" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="71" name="H-BridgeA_GND">
+      <node ref="U1" pin="15"/>
+      <node ref="U1" pin="16"/>
     </net>
   </nets>
 </export>
