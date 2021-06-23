@@ -421,7 +421,7 @@ L Connector:Screw_Terminal_01x02 J5
 U 1 1 60FD2C43
 P 3600 6250
 F 0 "J5" H 3680 6242 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 3680 6151 50  0000 L CNN
+F 1 "PWR_IN" H 3680 6151 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 6250 50  0001 C CNN
 F 3 "~" H 3600 6250 50  0001 C CNN
 	1    3600 6250
@@ -432,7 +432,7 @@ L Connector:Screw_Terminal_01x02 J4
 U 1 1 60FD3643
 P 3600 6000
 F 0 "J4" H 3680 5992 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 3680 5901 50  0000 L CNN
+F 1 "M2" H 3680 5901 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 6000 50  0001 C CNN
 F 3 "~" H 3600 6000 50  0001 C CNN
 	1    3600 6000
@@ -443,7 +443,7 @@ L Connector:Screw_Terminal_01x02 J3
 U 1 1 60FD4AF3
 P 3600 5750
 F 0 "J3" H 3680 5742 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 3680 5651 50  0000 L CNN
+F 1 "M1" H 3680 5651 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 5750 50  0001 C CNN
 F 3 "~" H 3600 5750 50  0001 C CNN
 	1    3600 5750
