@@ -447,7 +447,7 @@ Text Notes 3800 4300 0    50   ~ 0
 Text Notes 6950 6400 0    50   ~ 0
 5V Output
 $Sheet
-S 1350 3150 1800 750 
+S 1750 3200 1800 750 
 U 60E06626
 F0 "Motor Driver" 50
 F1 "Motor_Driver.sch" 50
@@ -1024,4 +1024,48 @@ Connection ~ 1150 6650
 Connection ~ 1650 6650
 Wire Notes Line
 	2150 5950 2150 7750
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60F87E36
+P 900 3800
+F 0 "H4" H 1000 3846 50  0000 L CNN
+F 1 "MountingHole" H 1000 3755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 900 3800 50  0001 C CNN
+F 3 "~" H 900 3800 50  0001 C CNN
+	1    900  3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60F8848E
+P 900 3600
+F 0 "H3" H 1000 3646 50  0000 L CNN
+F 1 "MountingHole" H 1000 3555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 900 3600 50  0001 C CNN
+F 3 "~" H 900 3600 50  0001 C CNN
+	1    900  3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60F8BEE8
+P 900 3400
+F 0 "H2" H 1000 3446 50  0000 L CNN
+F 1 "MountingHole" H 1000 3355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 900 3400 50  0001 C CNN
+F 3 "~" H 900 3400 50  0001 C CNN
+	1    900  3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60F8F7AC
+P 900 3200
+F 0 "H1" H 1000 3246 50  0000 L CNN
+F 1 "MountingHole" H 1000 3155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 900 3200 50  0001 C CNN
+F 3 "~" H 900 3200 50  0001 C CNN
+	1    900  3200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
