@@ -958,28 +958,10 @@ Wire Wire Line
 	4650 4950 4650 6150
 Wire Wire Line
 	5800 6150 5800 5950
-Connection ~ 4950 5450
 Wire Notes Line
 	700  4200 6900 4200
 Wire Notes Line
 	700  4200 700  7750
-$Comp
-L SamacSys_Parts:SRR1260-330M L1
-U 1 1 60FEDDCA
-P 4950 5450
-F 0 "L1" H 5350 5675 50  0000 C CNN
-F 1 "33uH" H 5350 5584 50  0000 C CNN
-F 2 "SamacSys_Parts:SRR1260-150M" H 5600 5500 50  0001 L CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/SRR1260.pdf" H 5600 5400 50  0001 L CNN
-F 4 "Power inductor SMD shielded 33uH Bourns SRR1260 Series Shielded Wire-wound SMD Inductor with a Ferrite Core, 33 uH +/-20% Wire-Wound 3A Idc Q:27" H 5600 5300 50  0001 L CNN "Description"
-F 5 "" H 5600 5200 50  0001 L CNN "Height"
-F 6 "652-SRR1260-330M" H 5600 5100 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Bourns/SRR1260-330M?qs=R2jSSvul3fC3V4%252BTrq0P0w%3D%3D" H 5600 5000 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Bourns" H 5600 4900 50  0001 L CNN "Manufacturer_Name"
-F 9 "SRR1260-330M" H 5600 4800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4950 5450
-	1    0    0    -1  
-$EndComp
 $Comp
 L SamacSys_Parts:LL3301NF065QG S1
 U 1 1 610975F8
@@ -1027,18 +1009,19 @@ Wire Notes Line
 $Comp
 L SamacSys_Parts:MPX1D0830L330 L?
 U 1 1 60FE3DA9
-P 3800 5600
-F 0 "L?" H 4200 5825 50  0000 C CNN
-F 1 "MPX1D0830L330" H 4200 5734 50  0000 C CNN
-F 2 "INDM8680X300N" H 4450 5650 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MPX1D0830L330.pdf" H 4450 5550 50  0001 L CNN
-F 4 "Metal Composite Power Inductors MPX" H 4450 5450 50  0001 L CNN "Description"
-F 5 "3" H 4450 5350 50  0001 L CNN "Height"
-F 6 "80-MPX1D0830L330" H 4450 5250 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-MPX1D0830L330" H 4450 5150 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Kemet" H 4450 5050 50  0001 L CNN "Manufacturer_Name"
-F 9 "MPX1D0830L330" H 4450 4950 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3800 5600
+P 4950 5450
+F 0 "L?" H 5350 5675 50  0000 C CNN
+F 1 "33uH" H 5350 5584 50  0000 C CNN
+F 2 "INDM8680X300N" H 5600 5500 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MPX1D0830L330.pdf" H 5600 5400 50  0001 L CNN
+F 4 "Metal Composite Power Inductors MPX" H 5600 5300 50  0001 L CNN "Description"
+F 5 "3" H 5600 5200 50  0001 L CNN "Height"
+F 6 "80-MPX1D0830L330" H 5600 5100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-MPX1D0830L330" H 5600 5000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 5600 4900 50  0001 L CNN "Manufacturer_Name"
+F 9 "MPX1D0830L330" H 5600 4800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4950 5450
 	1    0    0    -1  
 $EndComp
+Connection ~ 4950 5450
 $EndSCHEMATC
