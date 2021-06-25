@@ -618,26 +618,6 @@ Wire Notes Line
 Text Notes 4300 2700 0    50   ~ 0
 By using the current through A_Pos and A_Neg summed together\nyou can get the current through the single motor.
 $Comp
-L SamacSys_Parts:MAL214699906E3 C11
-U 1 1 60EC4C3E
-P 1950 5850
-F 0 "C11" V 2154 5980 50  0000 L CNN
-F 1 "100uF" V 2245 5980 50  0000 L CNN
-F 2 "SamacSys_Parts:CAPAE1290X1650N" H 2300 5900 50  0001 L CNN
-F 3 "https://www.vishay.com/docs/28403/146cti.pdf" H 2300 5800 50  0001 L CNN
-F 4 "Vishay Extreme 100uF 100 V Aluminium Electrolytic Capacitor 1216, 146 CTI Series 1500  6000h 12.5 x 12.5 x 16mm" H 2300 5700 50  0001 L CNN "Description"
-F 5 "16.5" H 2300 5600 50  0001 L CNN "Height"
-F 6 "594-MAL214699906E3" H 2300 5500 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Vishay-BC-Components/MAL214699906E3?qs=gUBFJjLdUib9zXP5zbfSLg%3D%3D" H 2300 5400 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 2300 5300 50  0001 L CNN "Manufacturer_Name"
-F 9 "MAL214699906E3" H 2300 5200 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1950 5850
-	0    1    1    0   
-$EndComp
-Connection ~ 1950 5850
-Wire Wire Line
-	1950 5850 2300 5850
-$Comp
 L SamacSys_Parts:C0805C104MMREC7210 C10
 U 1 1 60ED41BF
 P 1350 5850
@@ -657,8 +637,6 @@ $EndComp
 Wire Wire Line
 	1100 5850 1350 5850
 Connection ~ 1350 5850
-Wire Wire Line
-	1350 5850 1950 5850
 $Comp
 L SamacSys_Parts:GRM033R61C104KE84D C13
 U 1 1 60F0446C
@@ -730,4 +708,26 @@ Wire Wire Line
 	1950 3950 1900 3950
 Text GLabel 5200 6750 2    50   Input ~ 0
 TBLKAB
+$Comp
+L SamacSys_Parts:EEE-FK1V101XV C11
+U 1 1 60FCF7A1
+P 1950 5850
+F 0 "C11" V 2154 5980 50  0000 L CNN
+F 1 "100uF" V 2245 5980 50  0000 L CNN
+F 2 "CAPAE660X800N" H 2300 5900 50  0001 L CNN
+F 3 "https://na.industrial.panasonic.com/file-download/3122" H 2300 5800 50  0001 L CNN
+F 4 "Aluminum Electrolytic Capacitors - SMD 35VDC 100uF 20% Anti-Vibe AEC-Q200" H 2300 5700 50  0001 L CNN "Description"
+F 5 "8" H 2300 5600 50  0001 L CNN "Height"
+F 6 "667-EEE-FK1V101XV" H 2300 5500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FK1V101XV?qs=PzGy0jfpSMuc2LHnauKjyg%3D%3D" H 2300 5400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Panasonic" H 2300 5300 50  0001 L CNN "Manufacturer_Name"
+F 9 "EEE-FK1V101XV" H 2300 5200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1950 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 5850 1950 5850
+Connection ~ 1950 5850
+Wire Wire Line
+	1950 5850 2300 5850
 $EndSCHEMATC

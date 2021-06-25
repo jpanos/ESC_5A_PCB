@@ -365,6 +365,31 @@ X ~ 2 500 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
+# SamacSys_Parts_EEE-FK1V101XV
+#
+DEF SamacSys_Parts_EEE-FK1V101XV C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "SamacSys_Parts_EEE-FK1V101XV" 350 150 50 H V L CNN
+F2 "CAPAE660X800N" 350 50 50 H I L CNN
+F3 "https://na.industrial.panasonic.com/file-download/3122" 350 -50 50 H I L CNN
+F4 "Aluminum Electrolytic Capacitors - SMD 35VDC 100uF 20% Anti-Vibe AEC-Q200" 350 -150 50 H I L CNN "Description"
+F5 "8" 350 -250 50 H I L CNN "Height"
+F6 "667-EEE-FK1V101XV" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Panasonic/EEE-FK1V101XV?qs=PzGy0jfpSMuc2LHnauKjyg%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Panasonic" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "EEE-FK1V101XV" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 160 70 160 30 N
+P 2 0 1 6 180 50 140 50 N
+P 2 0 1 6 300 0 400 0 N
+P 5 0 1 6 200 100 200 -100 230 -100 230 100 200 100 N
+P 5 0 1 10 300 100 300 -100 270 -100 270 100 300 100 F
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 500 0 100 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # SamacSys_Parts_GRM033R61C104KE84D
 #
 DEF SamacSys_Parts_GRM033R61C104KE84D C 0 30 Y Y 1 F N
@@ -456,28 +481,26 @@ X 4 4 800 -100 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# SamacSys_Parts_MAL214699906E3
+# SamacSys_Parts_MPX1D0830L330
 #
-DEF SamacSys_Parts_MAL214699906E3 C 0 30 Y Y 1 F N
-F0 "C" 350 250 50 H V L CNN
-F1 "SamacSys_Parts_MAL214699906E3" 350 150 50 H V L CNN
-F2 "CAPAE1290X1650N" 350 50 50 H I L CNN
-F3 "https://www.vishay.com/docs/28403/146cti.pdf" 350 -50 50 H I L CNN
-F4 "Vishay Extreme 100uF 100 V Aluminium Electrolytic Capacitor 1216, 146 CTI Series 1500  6000h 12.5 x 12.5 x 16mm" 350 -150 50 H I L CNN "Description"
-F5 "16.5" 350 -250 50 H I L CNN "Height"
-F6 "594-MAL214699906E3" 350 -350 50 H I L CNN "Mouser Part Number"
-F7 "https://www.mouser.co.uk/ProductDetail/Vishay-BC-Components/MAL214699906E3?qs=gUBFJjLdUib9zXP5zbfSLg%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
-F8 "Vishay" 350 -550 50 H I L CNN "Manufacturer_Name"
-F9 "MAL214699906E3" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DEF SamacSys_Parts_MPX1D0830L330 L 0 30 Y Y 1 F N
+F0 "L" 650 250 50 H V L CNN
+F1 "SamacSys_Parts_MPX1D0830L330" 650 150 50 H V L CNN
+F2 "INDM8680X300N" 650 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/MPX1D0830L330.pdf" 650 -50 50 H I L CNN
+F4 "Metal Composite Power Inductors MPX" 650 -150 50 H I L CNN "Description"
+F5 "3" 650 -250 50 H I L CNN "Height"
+F6 "80-MPX1D0830L330" 650 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=80-MPX1D0830L330" 650 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Kemet" 650 -550 50 H I L CNN "Manufacturer_Name"
+F9 "MPX1D0830L330" 650 -650 50 H I L CNN "Manufacturer_Part_Number"
 DRAW
-P 2 0 1 6 100 0 200 0 N
-P 2 0 1 6 160 70 160 30 N
-P 2 0 1 6 180 50 140 50 N
-P 2 0 1 6 300 0 400 0 N
-P 5 0 1 6 200 100 200 -100 230 -100 230 100 200 100 N
-P 5 0 1 10 300 100 300 -100 270 -100 270 100 300 100 F
-X ~ 1 0 0 100 R 50 50 0 0 P
-X ~ 2 500 0 100 L 50 50 0 0 P
+A 250 -2 50 1777 -23 0 1 6 N 300 0 200 0
+A 350 -2 50 1777 -23 0 1 6 N 400 0 300 0
+A 450 -2 50 1777 -23 0 1 6 N 500 0 400 0
+A 550 -2 50 1777 -23 0 1 6 N 600 0 500 0
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 800 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
@@ -498,28 +521,6 @@ DRAW
 P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
 X ~ 1 0 0 200 R 50 50 0 0 P
 X ~ 2 700 0 200 L 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
-# SamacSys_Parts_SRR1260-330M
-#
-DEF SamacSys_Parts_SRR1260-330M L 0 30 Y Y 1 F N
-F0 "L" 650 250 50 H V L CNN
-F1 "SamacSys_Parts_SRR1260-330M" 650 150 50 H V L CNN
-F2 "SRR1260-150M" 650 50 50 H I L CNN
-F3 "https://www.bourns.com/docs/Product-Datasheets/SRR1260.pdf" 650 -50 50 H I L CNN
-F4 "Power inductor SMD shielded 33uH Bourns SRR1260 Series Shielded Wire-wound SMD Inductor with a Ferrite Core, 33 uH +/-20% Wire-Wound 3A Idc Q:27" 650 -150 50 H I L CNN "Description"
-F5 "652-SRR1260-330M" 650 -350 50 H I L CNN "Mouser Part Number"
-F6 "https://www.mouser.co.uk/ProductDetail/Bourns/SRR1260-330M?qs=R2jSSvul3fC3V4%252BTrq0P0w%3D%3D" 650 -450 50 H I L CNN "Mouser Price/Stock"
-F7 "Bourns" 650 -550 50 H I L CNN "Manufacturer_Name"
-F8 "SRR1260-330M" 650 -650 50 H I L CNN "Manufacturer_Part_Number"
-DRAW
-A 250 -2 50 1777 -23 0 1 6 N 300 0 200 0
-A 350 -2 50 1777 -23 0 1 6 N 400 0 300 0
-A 450 -2 50 1777 -23 0 1 6 N 500 0 400 0
-A 550 -2 50 1777 -23 0 1 6 N 600 0 500 0
-X ~ 1 0 0 200 R 50 50 0 0 P
-X ~ 2 800 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
