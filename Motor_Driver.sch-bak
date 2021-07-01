@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 2021-06-21_15-40-13:TB67H420FTG_EL U?
+L ESC_5A-rescue:TB67H420FTG_EL-2021-06-21_15-40-13 U?
 U 1 1 60E1079C
 P 1950 3950
 AR Path="/60E1079C" Ref="U?"  Part="1" 
@@ -27,7 +27,7 @@ F 3 "" H 1950 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2021-06-21_15-40-13:TB67H420FTG_EL U?
+L ESC_5A-rescue:TB67H420FTG_EL-2021-06-21_15-40-13 U?
 U 2 1 60E107A2
 P 5300 3400
 AR Path="/60E107A2" Ref="U?"  Part="2" 
@@ -182,59 +182,59 @@ VREF
 $Comp
 L Device:R_US R?
 U 1 1 60EAD954
-P 4200 7100
+P 4050 7400
 AR Path="/60EAD954" Ref="R?"  Part="1" 
 AR Path="/60E06626/60EAD954" Ref="R10"  Part="1" 
-F 0 "R10" V 4405 7100 50  0000 C CNN
-F 1 "5k" V 4314 7100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4240 7090 50  0001 C CNN
-F 3 "~" H 4200 7100 50  0001 C CNN
-	1    4200 7100
+F 0 "R10" V 4255 7400 50  0000 C CNN
+F 1 "5k" V 4164 7400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4090 7390 50  0001 C CNN
+F 3 "~" H 4050 7400 50  0001 C CNN
+	1    4050 7400
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 60EAD95A
-P 3650 7100
+P 3500 7400
 AR Path="/60EAD95A" Ref="R?"  Part="1" 
 AR Path="/60E06626/60EAD95A" Ref="R8"  Part="1" 
-F 0 "R8" V 3855 7100 50  0000 C CNN
-F 1 "20k" V 3764 7100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3690 7090 50  0001 C CNN
-F 3 "~" H 3650 7100 50  0001 C CNN
-	1    3650 7100
+F 0 "R8" V 3705 7400 50  0000 C CNN
+F 1 "20k" V 3614 7400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3540 7390 50  0001 C CNN
+F 3 "~" H 3500 7400 50  0001 C CNN
+	1    3500 7400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4350 7100 4400 7100
+	4200 7400 4250 7400
 Wire Wire Line
-	4400 7150 4400 7100
+	4250 7450 4250 7400
 $Comp
 L power:GND #PWR?
 U 1 1 60EAD965
-P 4400 7150
+P 4250 7450
 AR Path="/60EAD965" Ref="#PWR?"  Part="1" 
 AR Path="/60E06626/60EAD965" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 4400 6900 50  0001 C CNN
-F 1 "GND" H 4405 6977 50  0000 C CNN
-F 2 "" H 4400 7150 50  0001 C CNN
-F 3 "" H 4400 7150 50  0001 C CNN
-	1    4400 7150
+F 0 "#PWR030" H 4250 7200 50  0001 C CNN
+F 1 "GND" H 4255 7277 50  0000 C CNN
+F 2 "" H 4250 7450 50  0001 C CNN
+F 3 "" H 4250 7450 50  0001 C CNN
+	1    4250 7450
 	1    0    0    -1  
 $EndComp
-Text GLabel 3450 7100 0    50   Input ~ 0
+Text GLabel 3300 7400 0    50   Input ~ 0
 VCC_Driver
 Text GLabel 5250 4950 0    50   Input ~ 0
 VCC_Driver
-Text GLabel 3900 7150 3    50   Input ~ 0
+Text GLabel 3750 7450 3    50   Input ~ 0
 VREF
 Wire Wire Line
-	3800 7100 3900 7100
+	3650 7400 3750 7400
 Wire Wire Line
-	3900 7100 3900 7150
-Connection ~ 3900 7100
+	3750 7400 3750 7450
+Connection ~ 3750 7400
 Wire Wire Line
-	3900 7100 4050 7100
+	3750 7400 3900 7400
 Text GLabel 5000 6750 0    50   Input ~ 0
 VCC_Driver
 $Comp
@@ -251,7 +251,7 @@ F 3 "" H 5200 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 7100 3450 7100
+	3350 7400 3300 7400
 Wire Wire Line
 	5200 6800 5200 6750
 Wire Wire Line
@@ -383,7 +383,7 @@ Wire Notes Line
 	4500 6650 4500 7700
 Text Notes 800  6750 0    50   ~ 0
 Oscillator Control
-Text Notes 2950 6750 0    50   ~ 0
+Text Notes 2750 7300 0    50   ~ 0
 Current Control
 Text Notes 4550 7650 0    50   ~ 0
 VCC Cap
@@ -419,69 +419,45 @@ Motor Power
 $Comp
 L Connector:Screw_Terminal_01x02 J5
 U 1 1 60FD2C43
-P 3600 6250
-F 0 "J5" H 3680 6242 50  0000 L CNN
-F 1 "PWR_IN" H 3680 6151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 6250 50  0001 C CNN
-F 3 "~" H 3600 6250 50  0001 C CNN
-	1    3600 6250
+P 4200 5400
+F 0 "J5" H 4280 5392 50  0000 L CNN
+F 1 "PWR_IN" H 4280 5301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 5400 50  0001 C CNN
+F 3 "~" H 4200 5400 50  0001 C CNN
+	1    4200 5400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J4
-U 1 1 60FD3643
-P 3600 6000
-F 0 "J4" H 3680 5992 50  0000 L CNN
-F 1 "M2" H 3680 5901 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 6000 50  0001 C CNN
-F 3 "~" H 3600 6000 50  0001 C CNN
-	1    3600 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 60FD4AF3
-P 3600 5750
-F 0 "J3" H 3680 5742 50  0000 L CNN
-F 1 "M1" H 3680 5651 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 5750 50  0001 C CNN
-F 3 "~" H 3600 5750 50  0001 C CNN
-	1    3600 5750
-	1    0    0    -1  
-$EndComp
-Text GLabel 3400 5750 0    50   Input ~ 0
+Text GLabel 3550 5900 0    50   Input ~ 0
 MotorA_Pos_Out
-Text GLabel 3400 5850 0    50   Input ~ 0
+Text GLabel 3550 6000 0    50   Input ~ 0
 MotorA_Neg_Out
-Text GLabel 3400 6000 0    50   Input ~ 0
+Text GLabel 3550 6350 0    50   Input ~ 0
 MotorB_Pos_Out
-Text GLabel 3400 6100 0    50   Input ~ 0
+Text GLabel 3550 6450 0    50   Input ~ 0
 MotorB_Neg
-Text GLabel 3400 6250 0    50   Input ~ 0
+Text GLabel 3550 6850 0    50   Input ~ 0
 PWR_IN
 $Comp
 L power:GND #PWR?
 U 1 1 60FE14A5
-P 3350 6350
+P 3500 6950
 AR Path="/60FE14A5" Ref="#PWR?"  Part="1" 
 AR Path="/60E06626/60FE14A5" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 3350 6100 50  0001 C CNN
-F 1 "GND" H 3355 6177 50  0000 C CNN
-F 2 "" H 3350 6350 50  0001 C CNN
-F 3 "" H 3350 6350 50  0001 C CNN
-	1    3350 6350
+F 0 "#PWR029" H 3500 6700 50  0001 C CNN
+F 1 "GND" H 3505 6777 50  0000 C CNN
+F 2 "" H 3500 6950 50  0001 C CNN
+F 3 "" H 3500 6950 50  0001 C CNN
+	1    3500 6950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 6350 3350 6350
-Text Notes 3900 5750 0    50   ~ 0
-Terminal I/O
+	3550 6950 3500 6950
 Text Notes 2500 3200 0    50   ~ 0
 Motor Driver control
 Text Notes 4600 3200 0    50   ~ 0
 Motor Driver Power
 $Comp
-L SamacSys_Parts:PCS2512DR0100ET R7
+L ESC_5A-rescue:PCS2512DR0100ET-SamacSys_Parts R7
 U 1 1 60D7DF2B
 P 1600 2450
 F 0 "R7" H 1950 2675 50  0000 C CNN
@@ -538,7 +514,7 @@ Wire Wire Line
 Text GLabel 1300 2100 0    50   Input ~ 0
 MotorB_Pos
 $Comp
-L SamacSys_Parts:PCS2512DR0100ET R6
+L ESC_5A-rescue:PCS2512DR0100ET-SamacSys_Parts R6
 U 1 1 60D7DF37
 P 1600 2100
 F 0 "R6" H 1950 2325 50  0000 C CNN
@@ -559,8 +535,6 @@ MotorB_Pos_Out
 Text GLabel 2500 2450 2    50   Input ~ 0
 MotorA_Pos_Out
 Wire Notes Line
-	700  6650 6900 6650
-Wire Notes Line
 	700  5650 4550 5650
 Wire Notes Line
 	700  7700 6900 7700
@@ -571,7 +545,7 @@ Wire Notes Line
 Text Notes 3300 1450 0    50   ~ 0
 Current Sense for M1, M2, and single motor
 $Comp
-L SamacSys_Parts:PCS2512DR0100ET R9
+L ESC_5A-rescue:PCS2512DR0100ET-SamacSys_Parts R9
 U 1 1 60DD4ABF
 P 4050 2100
 F 0 "R9" H 4400 2325 50  0000 C CNN
@@ -618,7 +592,7 @@ Wire Notes Line
 Text Notes 4300 2700 0    50   ~ 0
 By using the current through A_Pos and A_Neg summed together\nyou can get the current through the single motor.
 $Comp
-L SamacSys_Parts:C0805C104MMREC7210 C10
+L ESC_5A-rescue:C0805C104MMREC7210-SamacSys_Parts C10
 U 1 1 60ED41BF
 P 1350 5850
 F 0 "C10" V 1554 5978 50  0000 L CNN
@@ -638,7 +612,7 @@ Wire Wire Line
 	1100 5850 1350 5850
 Connection ~ 1350 5850
 $Comp
-L SamacSys_Parts:GRM033R61C104KE84D C13
+L ESC_5A-rescue:GRM033R61C104KE84D-SamacSys_Parts C13
 U 1 1 60F0446C
 P 5200 7300
 F 0 "C13" V 5496 7172 50  0000 R CNN
@@ -709,7 +683,7 @@ Wire Wire Line
 Text GLabel 5200 6750 2    50   Input ~ 0
 TBLKAB
 $Comp
-L SamacSys_Parts:EEE-FK1V101XV C11
+L ESC_5A-rescue:EEE-FK1V101XV-SamacSys_Parts C11
 U 1 1 60FCF7A1
 P 1950 5850
 F 0 "C11" V 2154 5980 50  0000 L CNN
@@ -730,4 +704,132 @@ Wire Wire Line
 Connection ~ 1950 5850
 Wire Wire Line
 	1950 5850 2300 5850
+$Comp
+L SamacSys_Parts:XT30PW-M J?
+U 1 1 60DE56A4
+P 3550 6850
+F 0 "J?" H 3950 6800 50  0000 C CNN
+F 1 "PWR_IN" H 3950 7024 50  0000 C CNN
+F 2 "XT30PWM" H 4200 6950 50  0001 L CNN
+F 3 "https://www.tme.eu/sl/Document/ce4077e36b79046da520ca73227e15de/XT30PW%20SPEC.pdf" H 4200 6850 50  0001 L CNN
+F 4 "30A Low Temperature Rise Fire Retardant Plug" H 4200 6750 50  0001 L CNN "Description"
+F 5 "5" H 4200 6650 50  0001 L CNN "Height"
+F 6 "" H 4200 6550 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4200 6450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 4200 6350 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30PW-M" H 4200 6250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3550 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6850 4350 6950
+$Comp
+L power:GND #PWR?
+U 1 1 60E0557D
+P 4350 6950
+AR Path="/60E0557D" Ref="#PWR?"  Part="1" 
+AR Path="/60E06626/60E0557D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 6700 50  0001 C CNN
+F 1 "GND" H 4355 6777 50  0000 C CNN
+F 2 "" H 4350 6950 50  0001 C CNN
+F 3 "" H 4350 6950 50  0001 C CNN
+	1    4350 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 60FD4AF3
+P 4850 4450
+F 0 "J3" H 4930 4442 50  0000 L CNN
+F 1 "M1" H 4930 4351 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4850 4450 50  0001 C CNN
+F 3 "~" H 4850 4450 50  0001 C CNN
+	1    4850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 60FD3643
+P 4200 4850
+F 0 "J4" H 4280 4842 50  0000 L CNN
+F 1 "M2" H 4280 4751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 4850 50  0001 C CNN
+F 3 "~" H 4200 4850 50  0001 C CNN
+	1    4200 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 6950
+$Comp
+L SamacSys_Parts:XT30PW-M J?
+U 1 1 60E1FD41
+P 3550 6350
+F 0 "J?" H 3950 6350 50  0000 C CNN
+F 1 "M2" H 3950 6524 50  0000 C CNN
+F 2 "XT30PWM" H 4200 6450 50  0001 L CNN
+F 3 "https://www.tme.eu/sl/Document/ce4077e36b79046da520ca73227e15de/XT30PW%20SPEC.pdf" H 4200 6350 50  0001 L CNN
+F 4 "30A Low Temperature Rise Fire Retardant Plug" H 4200 6250 50  0001 L CNN "Description"
+F 5 "5" H 4200 6150 50  0001 L CNN "Height"
+F 6 "" H 4200 6050 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4200 5950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 4200 5850 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30PW-M" H 4200 5750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3550 6350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4500 6650 6900 6650
+Wire Notes Line
+	700  6650 2700 6650
+Wire Notes Line
+	4500 7200 2700 7200
+$Comp
+L SamacSys_Parts:XT30PW-M J?
+U 1 1 60E3B756
+P 3550 5900
+F 0 "J?" H 3950 5850 50  0000 C CNN
+F 1 "M1" H 3950 6074 50  0000 C CNN
+F 2 "XT30PWM" H 4200 6000 50  0001 L CNN
+F 3 "https://www.tme.eu/sl/Document/ce4077e36b79046da520ca73227e15de/XT30PW%20SPEC.pdf" H 4200 5900 50  0001 L CNN
+F 4 "30A Low Temperature Rise Fire Retardant Plug" H 4200 5800 50  0001 L CNN "Description"
+F 5 "5" H 4200 5700 50  0001 L CNN "Height"
+F 6 "" H 4200 5600 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4200 5500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 4200 5400 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30PW-M" H 4200 5300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3550 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5850 4350 5900
+Wire Wire Line
+	4350 6350 4350 6450
+$Comp
+L power:GND #PWR?
+U 1 1 60E4D7FC
+P 4350 6450
+AR Path="/60E4D7FC" Ref="#PWR?"  Part="1" 
+AR Path="/60E06626/60E4D7FC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 6200 50  0001 C CNN
+F 1 "GND" H 4355 6277 50  0000 C CNN
+F 2 "" H 4350 6450 50  0001 C CNN
+F 3 "" H 4350 6450 50  0001 C CNN
+	1    4350 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E506FD
+P 4350 6000
+AR Path="/60E506FD" Ref="#PWR?"  Part="1" 
+AR Path="/60E06626/60E506FD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 5750 50  0001 C CNN
+F 1 "GND" H 4355 5827 50  0000 C CNN
+F 2 "" H 4350 6000 50  0001 C CNN
+F 3 "" H 4350 6000 50  0001 C CNN
+	1    4350 6000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4350 5900
+Wire Wire Line
+	4350 5900 4350 5950
 $EndSCHEMATC

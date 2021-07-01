@@ -1,4 +1,4 @@
-19129636292022366
+19134510705131551
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76321,6 +76321,13 @@ Capacitor
 2
 2
 SamacSys_Parts
+CAPAE660X800N
+EEE-FK1V101XV
+Capacitor Polarised
+0
+2
+2
+SamacSys_Parts
 CAPAE1030X1050N
 10x10.2
 Capacitor Polarised
@@ -76366,6 +76373,13 @@ SamacSys_Parts
 DIOM5226X240N
 SMA
 Schottky Diode
+0
+2
+2
+SamacSys_Parts
+INDM8680X300N
+smd
+Inductor
 0
 2
 2
@@ -76474,6 +76488,13 @@ Inductor
 0
 2
 2
+SamacSys_Parts
+XT30PWM
+XT30PW-M
+Connector
+0
+4
+4
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf

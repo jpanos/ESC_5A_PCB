@@ -182,59 +182,59 @@ VREF
 $Comp
 L Device:R_US R?
 U 1 1 60EAD954
-P 4200 7100
+P 4050 7400
 AR Path="/60EAD954" Ref="R?"  Part="1" 
 AR Path="/60E06626/60EAD954" Ref="R10"  Part="1" 
-F 0 "R10" V 4405 7100 50  0000 C CNN
-F 1 "5k" V 4314 7100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4240 7090 50  0001 C CNN
-F 3 "~" H 4200 7100 50  0001 C CNN
-	1    4200 7100
+F 0 "R10" V 4255 7400 50  0000 C CNN
+F 1 "5k" V 4164 7400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4090 7390 50  0001 C CNN
+F 3 "~" H 4050 7400 50  0001 C CNN
+	1    4050 7400
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 60EAD95A
-P 3650 7100
+P 3500 7400
 AR Path="/60EAD95A" Ref="R?"  Part="1" 
 AR Path="/60E06626/60EAD95A" Ref="R8"  Part="1" 
-F 0 "R8" V 3855 7100 50  0000 C CNN
-F 1 "20k" V 3764 7100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3690 7090 50  0001 C CNN
-F 3 "~" H 3650 7100 50  0001 C CNN
-	1    3650 7100
+F 0 "R8" V 3705 7400 50  0000 C CNN
+F 1 "20k" V 3614 7400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3540 7390 50  0001 C CNN
+F 3 "~" H 3500 7400 50  0001 C CNN
+	1    3500 7400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4350 7100 4400 7100
+	4200 7400 4250 7400
 Wire Wire Line
-	4400 7150 4400 7100
+	4250 7450 4250 7400
 $Comp
 L power:GND #PWR?
 U 1 1 60EAD965
-P 4400 7150
+P 4250 7450
 AR Path="/60EAD965" Ref="#PWR?"  Part="1" 
 AR Path="/60E06626/60EAD965" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 4400 6900 50  0001 C CNN
-F 1 "GND" H 4405 6977 50  0000 C CNN
-F 2 "" H 4400 7150 50  0001 C CNN
-F 3 "" H 4400 7150 50  0001 C CNN
-	1    4400 7150
+F 0 "#PWR030" H 4250 7200 50  0001 C CNN
+F 1 "GND" H 4255 7277 50  0000 C CNN
+F 2 "" H 4250 7450 50  0001 C CNN
+F 3 "" H 4250 7450 50  0001 C CNN
+	1    4250 7450
 	1    0    0    -1  
 $EndComp
-Text GLabel 3450 7100 0    50   Input ~ 0
+Text GLabel 3300 7400 0    50   Input ~ 0
 VCC_Driver
 Text GLabel 5250 4950 0    50   Input ~ 0
 VCC_Driver
-Text GLabel 3900 7150 3    50   Input ~ 0
+Text GLabel 3750 7450 3    50   Input ~ 0
 VREF
 Wire Wire Line
-	3800 7100 3900 7100
+	3650 7400 3750 7400
 Wire Wire Line
-	3900 7100 3900 7150
-Connection ~ 3900 7100
+	3750 7400 3750 7450
+Connection ~ 3750 7400
 Wire Wire Line
-	3900 7100 4050 7100
+	3750 7400 3900 7400
 Text GLabel 5000 6750 0    50   Input ~ 0
 VCC_Driver
 $Comp
@@ -251,7 +251,7 @@ F 3 "" H 5200 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 7100 3450 7100
+	3350 7400 3300 7400
 Wire Wire Line
 	5200 6800 5200 6750
 Wire Wire Line
@@ -383,7 +383,7 @@ Wire Notes Line
 	4500 6650 4500 7700
 Text Notes 800  6750 0    50   ~ 0
 Oscillator Control
-Text Notes 2950 6750 0    50   ~ 0
+Text Notes 2750 7300 0    50   ~ 0
 Current Control
 Text Notes 4550 7650 0    50   ~ 0
 VCC Cap
@@ -416,66 +416,31 @@ Wire Notes Line
 	2700 5650 2700 7700
 Text Notes 800  5750 0    50   ~ 0
 Motor Power
-$Comp
-L Connector:Screw_Terminal_01x02 J5
-U 1 1 60FD2C43
-P 3600 6250
-F 0 "J5" H 3680 6242 50  0000 L CNN
-F 1 "PWR_IN" H 3680 6151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 6250 50  0001 C CNN
-F 3 "~" H 3600 6250 50  0001 C CNN
-	1    3600 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J4
-U 1 1 60FD3643
-P 3600 6000
-F 0 "J4" H 3680 5992 50  0000 L CNN
-F 1 "M2" H 3680 5901 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 6000 50  0001 C CNN
-F 3 "~" H 3600 6000 50  0001 C CNN
-	1    3600 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 60FD4AF3
-P 3600 5750
-F 0 "J3" H 3680 5742 50  0000 L CNN
-F 1 "M1" H 3680 5651 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 5750 50  0001 C CNN
-F 3 "~" H 3600 5750 50  0001 C CNN
-	1    3600 5750
-	1    0    0    -1  
-$EndComp
-Text GLabel 3400 5750 0    50   Input ~ 0
+Text GLabel 3550 5900 0    50   Input ~ 0
 MotorA_Pos_Out
-Text GLabel 3400 5850 0    50   Input ~ 0
+Text GLabel 3550 6000 0    50   Input ~ 0
 MotorA_Neg_Out
-Text GLabel 3400 6000 0    50   Input ~ 0
+Text GLabel 3550 6350 0    50   Input ~ 0
 MotorB_Pos_Out
-Text GLabel 3400 6100 0    50   Input ~ 0
+Text GLabel 3550 6450 0    50   Input ~ 0
 MotorB_Neg
-Text GLabel 3400 6250 0    50   Input ~ 0
+Text GLabel 3550 6850 0    50   Input ~ 0
 PWR_IN
 $Comp
 L power:GND #PWR?
 U 1 1 60FE14A5
-P 3350 6350
+P 3500 6950
 AR Path="/60FE14A5" Ref="#PWR?"  Part="1" 
 AR Path="/60E06626/60FE14A5" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 3350 6100 50  0001 C CNN
-F 1 "GND" H 3355 6177 50  0000 C CNN
-F 2 "" H 3350 6350 50  0001 C CNN
-F 3 "" H 3350 6350 50  0001 C CNN
-	1    3350 6350
+F 0 "#PWR029" H 3500 6700 50  0001 C CNN
+F 1 "GND" H 3505 6777 50  0000 C CNN
+F 2 "" H 3500 6950 50  0001 C CNN
+F 3 "" H 3500 6950 50  0001 C CNN
+	1    3500 6950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 6350 3350 6350
-Text Notes 3900 5750 0    50   ~ 0
-Terminal I/O
+	3550 6950 3500 6950
 Text Notes 2500 3200 0    50   ~ 0
 Motor Driver control
 Text Notes 4600 3200 0    50   ~ 0
@@ -558,8 +523,6 @@ Text GLabel 2500 2100 2    50   Input ~ 0
 MotorB_Pos_Out
 Text GLabel 2500 2450 2    50   Input ~ 0
 MotorA_Pos_Out
-Wire Notes Line
-	700  6650 6900 6650
 Wire Notes Line
 	700  5650 4550 5650
 Wire Notes Line
@@ -714,7 +677,7 @@ U 1 1 60FCF7A1
 P 1950 5850
 F 0 "C11" V 2154 5980 50  0000 L CNN
 F 1 "100uF" V 2245 5980 50  0000 L CNN
-F 2 "CAPAE660X800N" H 2300 5900 50  0001 L CNN
+F 2 "SamacSys_Parts:CAPAE660X800N" H 2300 5900 50  0001 L CNN
 F 3 "https://na.industrial.panasonic.com/file-download/3122" H 2300 5800 50  0001 L CNN
 F 4 "Aluminum Electrolytic Capacitors - SMD 35VDC 100uF 20% Anti-Vibe AEC-Q200" H 2300 5700 50  0001 L CNN "Description"
 F 5 "8" H 2300 5600 50  0001 L CNN "Height"
@@ -730,4 +693,63 @@ Wire Wire Line
 Connection ~ 1950 5850
 Wire Wire Line
 	1950 5850 2300 5850
+Wire Notes Line
+	4500 6650 6900 6650
+Wire Notes Line
+	700  6650 2700 6650
+Wire Notes Line
+	4500 7200 2700 7200
+Text Notes 2750 5750 0    50   ~ 0
+Terminal I/O
+$Comp
+L SamacSys_Parts:XT30PB J3
+U 1 1 60E6854C
+P 3550 5900
+F 0 "J3" H 4178 5896 50  0000 L CNN
+F 1 "M1" H 4178 5805 50  0000 L CNN
+F 2 "XT30PB" H 4200 6000 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/4acc913878197f8c2e30d4b8cdc47230/XT30UPB%20SPEC.pdf" H 4200 5900 50  0001 L CNN
+F 4 "Mini XT60 XT30 Connector for RC Multirotor Racing Drone Quadcopter" H 4200 5800 50  0001 L CNN "Description"
+F 5 "10.7" H 4200 5700 50  0001 L CNN "Height"
+F 6 "" H 4200 5600 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4200 5500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 4200 5400 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30PB" H 4200 5300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:XT30PB J4
+U 1 1 60E68DD0
+P 3550 6350
+F 0 "J4" H 4178 6346 50  0000 L CNN
+F 1 "M2" H 4178 6255 50  0000 L CNN
+F 2 "XT30PB" H 4200 6450 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/4acc913878197f8c2e30d4b8cdc47230/XT30UPB%20SPEC.pdf" H 4200 6350 50  0001 L CNN
+F 4 "Mini XT60 XT30 Connector for RC Multirotor Racing Drone Quadcopter" H 4200 6250 50  0001 L CNN "Description"
+F 5 "10.7" H 4200 6150 50  0001 L CNN "Height"
+F 6 "" H 4200 6050 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4200 5950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 4200 5850 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30PB" H 4200 5750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3550 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:XT30PB J5
+U 1 1 60E6BAFF
+P 3550 6850
+F 0 "J5" H 4178 6846 50  0000 L CNN
+F 1 "PWR_IN" H 4178 6755 50  0000 L CNN
+F 2 "XT30PB" H 4200 6950 50  0001 L CNN
+F 3 "https://www.tme.eu/Document/4acc913878197f8c2e30d4b8cdc47230/XT30UPB%20SPEC.pdf" H 4200 6850 50  0001 L CNN
+F 4 "Mini XT60 XT30 Connector for RC Multirotor Racing Drone Quadcopter" H 4200 6750 50  0001 L CNN "Description"
+F 5 "10.7" H 4200 6650 50  0001 L CNN "Height"
+F 6 "" H 4200 6550 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4200 6450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amass" H 4200 6350 50  0001 L CNN "Manufacturer_Name"
+F 9 "XT30PB" H 4200 6250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3550 6850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

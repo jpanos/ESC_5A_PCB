@@ -437,7 +437,6 @@ F 3 "" H 7450 6100 50  0001 C CNN
 	1    7450 6100
 	0    1    1    0   
 $EndComp
-NoConn ~ 7350 6000
 Wire Notes Line
 	7700 6450 7700 5750
 Wire Notes Line
@@ -1012,7 +1011,7 @@ U 1 1 60FE3DA9
 P 4950 5450
 F 0 "L1" H 5350 5675 50  0000 C CNN
 F 1 "33uH" H 5350 5584 50  0000 C CNN
-F 2 "INDM8680X300N" H 5600 5500 50  0001 L CNN
+F 2 "SamacSys_Parts:INDM8680X300N" H 5600 5500 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/MPX1D0830L330.pdf" H 5600 5400 50  0001 L CNN
 F 4 "Metal Composite Power Inductors MPX" H 5600 5300 50  0001 L CNN "Description"
 F 5 "3" H 5600 5200 50  0001 L CNN "Height"
@@ -1024,4 +1023,12 @@ F 9 "MPX1D0830L330" H 5600 4800 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Connection ~ 4950 5450
+Wire Wire Line
+	7350 6000 7450 6000
+Text GLabel 7450 6000 2    50   Input ~ 0
+PPM
+Wire Wire Line
+	9550 3350 9550 3300
+Text GLabel 9550 3300 1    50   Input ~ 0
+PPM
 $EndSCHEMATC
