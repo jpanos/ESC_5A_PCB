@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ESC_5A-rescue)(type Legacy)(uri ${KIPRJMOD}/ESC_5A-rescue.lib)(options "")(descr ""))
+)
