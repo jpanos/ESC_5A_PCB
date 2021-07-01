@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 2021-06-21_15-40-13:TB67H420FTG_EL U?
+L ESC_5A-rescue:TB67H420FTG_EL-2021-06-21_15-40-13 U?
 U 1 1 60E1079C
 P 1950 3950
 AR Path="/60E1079C" Ref="U?"  Part="1" 
@@ -27,7 +27,7 @@ F 3 "" H 1950 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2021-06-21_15-40-13:TB67H420FTG_EL U?
+L ESC_5A-rescue:TB67H420FTG_EL-2021-06-21_15-40-13 U?
 U 2 1 60E107A2
 P 5300 3400
 AR Path="/60E107A2" Ref="U?"  Part="2" 
@@ -481,7 +481,7 @@ Motor Driver control
 Text Notes 4600 3200 0    50   ~ 0
 Motor Driver Power
 $Comp
-L SamacSys_Parts:PCS2512DR0100ET R7
+L ESC_5A-rescue:PCS2512DR0100ET-SamacSys_Parts R7
 U 1 1 60D7DF2B
 P 1600 2450
 F 0 "R7" H 1950 2675 50  0000 C CNN
@@ -538,7 +538,7 @@ Wire Wire Line
 Text GLabel 1300 2100 0    50   Input ~ 0
 MotorB_Pos
 $Comp
-L SamacSys_Parts:PCS2512DR0100ET R6
+L ESC_5A-rescue:PCS2512DR0100ET-SamacSys_Parts R6
 U 1 1 60D7DF37
 P 1600 2100
 F 0 "R6" H 1950 2325 50  0000 C CNN
@@ -571,7 +571,7 @@ Wire Notes Line
 Text Notes 3300 1450 0    50   ~ 0
 Current Sense for M1, M2, and single motor
 $Comp
-L SamacSys_Parts:PCS2512DR0100ET R9
+L ESC_5A-rescue:PCS2512DR0100ET-SamacSys_Parts R9
 U 1 1 60DD4ABF
 P 4050 2100
 F 0 "R9" H 4400 2325 50  0000 C CNN
@@ -618,7 +618,7 @@ Wire Notes Line
 Text Notes 4300 2700 0    50   ~ 0
 By using the current through A_Pos and A_Neg summed together\nyou can get the current through the single motor.
 $Comp
-L SamacSys_Parts:C0805C104MMREC7210 C10
+L ESC_5A-rescue:C0805C104MMREC7210-SamacSys_Parts C10
 U 1 1 60ED41BF
 P 1350 5850
 F 0 "C10" V 1554 5978 50  0000 L CNN
@@ -638,7 +638,7 @@ Wire Wire Line
 	1100 5850 1350 5850
 Connection ~ 1350 5850
 $Comp
-L SamacSys_Parts:GRM033R61C104KE84D C13
+L ESC_5A-rescue:GRM033R61C104KE84D-SamacSys_Parts C13
 U 1 1 60F0446C
 P 5200 7300
 F 0 "C13" V 5496 7172 50  0000 R CNN
@@ -709,7 +709,7 @@ Wire Wire Line
 Text GLabel 5200 6750 2    50   Input ~ 0
 TBLKAB
 $Comp
-L SamacSys_Parts:EEE-FK1V101XV C11
+L ESC_5A-rescue:EEE-FK1V101XV-SamacSys_Parts C11
 U 1 1 60FCF7A1
 P 1950 5850
 F 0 "C11" V 2154 5980 50  0000 L CNN
