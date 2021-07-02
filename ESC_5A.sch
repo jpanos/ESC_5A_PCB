@@ -238,10 +238,6 @@ F 3 "" H 1050 6250 50  0001 C CNN
 	1    1050 6250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9250 3350 9250 3250
-Wire Wire Line
-	9250 3250 8550 3250
 $Comp
 L power:GND #PWR024
 U 1 1 60D06FC2
@@ -255,8 +251,6 @@ F 3 "" H 8550 3850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8550 3750 8550 3850
-Wire Wire Line
-	9350 3350 9350 3150
 $Comp
 L power:GND #PWR023
 U 1 1 60D09073
@@ -437,14 +431,10 @@ F 3 "" H 7450 6100 50  0001 C CNN
 	1    7450 6100
 	0    1    1    0   
 $EndComp
-Wire Notes Line
-	7700 6450 7700 5750
-Wire Notes Line
-	7700 5750 6900 5750
 Text Notes 3800 4300 0    50   ~ 0
 5V Power Generation
 Text Notes 6950 6400 0    50   ~ 0
-5V Output
+Servo One\n
 $Sheet
 S 1350 3150 1800 750 
 U 60E06626
@@ -475,10 +465,6 @@ Wire Wire Line
 	9150 5550 9150 6050
 Wire Wire Line
 	9150 6050 8750 6050
-Wire Wire Line
-	9350 3150 8000 3150
-Wire Wire Line
-	8000 3150 8000 3250
 Wire Notes Line
 	11050 6450 11050 2850
 Wire Notes Line
@@ -1026,11 +1012,11 @@ Connection ~ 4950 5450
 Wire Wire Line
 	7350 6000 7450 6000
 Text GLabel 7450 6000 2    50   Input ~ 0
-PPM
+PPM_1
 Wire Wire Line
 	9550 3350 9550 3300
 Text GLabel 9550 3300 1    50   Input ~ 0
-PPM
+PPM_1
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 60EFB1DF
@@ -1053,4 +1039,55 @@ F 3 "~" H 3850 2400 50  0001 C CNN
 	1    3850 2400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 60F759DB
+P 7150 5450
+F 0 "J6" H 7258 5731 50  0000 C CNN
+F 1 "5V_PWR" H 7258 5640 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7150 5450 50  0001 C CNN
+F 3 "~" H 7150 5450 50  0001 C CNN
+	1    7150 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5550 7450 5550
+$Comp
+L power:GND #PWR03
+U 1 1 60F79CEE
+P 7450 5550
+F 0 "#PWR03" H 7450 5300 50  0001 C CNN
+F 1 "GND" H 7455 5377 50  0000 C CNN
+F 2 "" H 7450 5550 50  0001 C CNN
+F 3 "" H 7450 5550 50  0001 C CNN
+	1    7450 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5350 7450 5350
+Text GLabel 7450 5350 2    50   Input ~ 0
+PPM_2
+NoConn ~ 7350 5450
+Wire Notes Line
+	6900 5750 7800 5750
+Wire Notes Line
+	7800 5100 6900 5100
+Wire Notes Line
+	7800 5100 7800 6450
+Text Notes 6900 5750 0    50   ~ 0
+Servo Two 
+Text GLabel 9050 3350 1    50   Input ~ 0
+PPM_2
+Wire Wire Line
+	9250 3000 8550 3000
+Wire Wire Line
+	8550 3000 8550 3250
+Wire Wire Line
+	9250 3000 9250 3350
+Wire Wire Line
+	9350 2950 8000 2950
+Wire Wire Line
+	9350 2950 9350 3350
+Wire Wire Line
+	8000 2950 8000 3250
 $EndSCHEMATC
