@@ -459,13 +459,13 @@ Text GLabel 10100 4850 2    50   Input ~ 0
 PWMA
 Text GLabel 10100 4750 2    50   Input ~ 0
 PWMB
-Text GLabel 9550 5600 3    50   Input ~ 0
-INB1
-Text GLabel 9650 5600 3    50   Input ~ 0
-INB2
-Text GLabel 9350 5600 3    50   Input ~ 0
-INA1
 Text GLabel 9450 5600 3    50   Input ~ 0
+INB1
+Text GLabel 9350 5600 3    50   Input ~ 0
+INB2
+Text GLabel 9650 5600 3    50   Input ~ 0
+INA1
+Text GLabel 9550 5600 3    50   Input ~ 0
 INA2
 Text GLabel 9750 3300 1    50   Input ~ 0
 HBMODE
@@ -1011,7 +1011,7 @@ U 1 1 60FE3DA9
 P 4950 5450
 F 0 "L1" H 5350 5675 50  0000 C CNN
 F 1 "33uH" H 5350 5584 50  0000 C CNN
-F 2 "SamacSys_Parts:INDM8680X300N" H 5600 5500 50  0001 L CNN
+F 2 "SamacSys_Parts:XAL6060333MEC" H 5600 5500 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/MPX1D0830L330.pdf" H 5600 5400 50  0001 L CNN
 F 4 "Metal Composite Power Inductors MPX" H 5600 5300 50  0001 L CNN "Description"
 F 5 "3" H 5600 5200 50  0001 L CNN "Height"
