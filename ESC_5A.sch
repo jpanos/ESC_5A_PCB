@@ -595,13 +595,13 @@ Text GLabel 8700 4450 0    50   Input ~ 0
 ADC_VREFA
 Text GLabel 8700 4550 0    50   Input ~ 0
 ADC_VREFB
-Text GLabel 8700 4750 0    50   Input ~ 0
-ADC_1
 Text GLabel 8700 4850 0    50   Input ~ 0
+ADC_1
+Text GLabel 8700 4650 0    50   Input ~ 0
 ADC_2
 Text GLabel 8700 4350 0    50   Input ~ 0
 ADC_MUX_GND
-Text GLabel 8700 4650 0    50   Input ~ 0
+Text GLabel 8700 4750 0    50   Input ~ 0
 ADC_3
 Wire Wire Line
 	10050 4350 10100 4350
@@ -1031,4 +1031,26 @@ Wire Wire Line
 	9550 3350 9550 3300
 Text GLabel 9550 3300 1    50   Input ~ 0
 PPM
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60EFB1DF
+P 3850 2650
+F 0 "H2" H 3950 2696 50  0000 L CNN
+F 1 "MountingHole" H 3950 2605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 3850 2650 50  0001 C CNN
+F 3 "~" H 3850 2650 50  0001 C CNN
+	1    3850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60EFB7EF
+P 3850 2400
+F 0 "H1" H 3950 2446 50  0000 L CNN
+F 1 "MountingHole" H 3950 2355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 3850 2400 50  0001 C CNN
+F 3 "~" H 3850 2400 50  0001 C CNN
+	1    3850 2400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

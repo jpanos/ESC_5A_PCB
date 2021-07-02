@@ -595,13 +595,13 @@ Text GLabel 8700 4450 0    50   Input ~ 0
 ADC_VREFA
 Text GLabel 8700 4550 0    50   Input ~ 0
 ADC_VREFB
-Text GLabel 8700 4750 0    50   Input ~ 0
-ADC_1
 Text GLabel 8700 4850 0    50   Input ~ 0
+ADC_1
+Text GLabel 8700 4650 0    50   Input ~ 0
 ADC_2
 Text GLabel 8700 4350 0    50   Input ~ 0
 ADC_MUX_GND
-Text GLabel 8700 4650 0    50   Input ~ 0
+Text GLabel 8700 4750 0    50   Input ~ 0
 ADC_3
 Wire Wire Line
 	10050 4350 10100 4350
