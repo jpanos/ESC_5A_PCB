@@ -327,7 +327,7 @@ Wire Wire Line
 	4850 4750 4850 4950
 Wire Wire Line
 	5050 4450 5050 4550
-Text GLabel 5700 2600 0    50   Input ~ 0
+Text GLabel 5450 2600 0    50   Input ~ 0
 PWR_IN
 Wire Wire Line
 	5050 4850 4950 4850
@@ -446,8 +446,6 @@ Wire Wire Line
 	9050 5550 8750 5550
 Wire Notes Line
 	11050 6450 11050 2850
-Wire Notes Line
-	6900 2850 6900 7750
 Wire Notes Line
 	2150 6450 11050 6450
 Text Notes 7000 2950 0    50   ~ 0
@@ -730,8 +728,6 @@ F 3 "" H 4500 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	3750 2850 3750 7750
-Wire Notes Line
 	3750 2850 11050 2850
 Text Notes 3800 2950 0    50   ~ 0
 EEPROM 
@@ -999,23 +995,23 @@ PPM_1
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 60EFB1DF
-P 3850 2650
-F 0 "H2" H 3950 2696 50  0000 L CNN
-F 1 "MountingHole" H 3950 2605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 3850 2650 50  0001 C CNN
-F 3 "~" H 3850 2650 50  0001 C CNN
-	1    3850 2650
+P 4050 2550
+F 0 "H2" H 4150 2596 50  0000 L CNN
+F 1 "MountingHole" H 4150 2505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 4050 2550 50  0001 C CNN
+F 3 "~" H 4050 2550 50  0001 C CNN
+	1    4050 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 60EFB7EF
-P 3850 2400
-F 0 "H1" H 3950 2446 50  0000 L CNN
-F 1 "MountingHole" H 3950 2355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 3850 2400 50  0001 C CNN
-F 3 "~" H 3850 2400 50  0001 C CNN
-	1    3850 2400
+P 4050 2300
+F 0 "H1" H 4150 2346 50  0000 L CNN
+F 1 "MountingHole" H 4150 2255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 4050 2300 50  0001 C CNN
+F 3 "~" H 4050 2300 50  0001 C CNN
+	1    4050 2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1110,26 +1106,38 @@ $EndComp
 $Comp
 L SamacSys_Parts:SZMMSZ4713T1G Z1
 U 1 1 60EAF0E9
-P 6450 2600
-F 0 "Z1" H 6750 2333 50  0000 C CNN
-F 1 "SZMMSZ4713T1G" H 6750 2424 50  0000 C CNN
-F 2 "SOD3716X135N" H 6850 2750 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/2/SZMMSZ4713T1G.pdf" H 6850 2650 50  0001 L CNN
-F 4 "Zener Diodes ZEN REG 0.5W 30V" H 6850 2550 50  0001 L CNN "Description"
-F 5 "1.35" H 6850 2450 50  0001 L CNN "Height"
-F 6 "863-SZMMSZ4713T1G" H 6850 2350 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/SZMMSZ4713T1G?qs=PJJcWtbOkNU%2F%252BcrJAwZPrw%3D%3D" H 6850 2250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 6850 2150 50  0001 L CNN "Manufacturer_Name"
-F 9 "SZMMSZ4713T1G" H 6850 2050 50  0001 L CNN "Manufacturer_Part_Number"
-	1    6450 2600
+P 6200 2600
+F 0 "Z1" H 6500 2333 50  0000 C CNN
+F 1 "SZMMSZ4713T1G" H 6500 2424 50  0000 C CNN
+F 2 "SOD3716X135N" H 6600 2750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/SZMMSZ4713T1G.pdf" H 6600 2650 50  0001 L CNN
+F 4 "Zener Diodes ZEN REG 0.5W 30V" H 6600 2550 50  0001 L CNN "Description"
+F 5 "1.35" H 6600 2450 50  0001 L CNN "Height"
+F 6 "863-SZMMSZ4713T1G" H 6600 2350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/SZMMSZ4713T1G?qs=PJJcWtbOkNU%2F%252BcrJAwZPrw%3D%3D" H 6600 2250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 6600 2150 50  0001 L CNN "Manufacturer_Name"
+F 9 "SZMMSZ4713T1G" H 6600 2050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6200 2600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5700 2600 5850 2600
+	5450 2600 5600 2600
 Wire Wire Line
-	6450 2600 6600 2600
-Text GLabel 6600 2600 2    50   Input ~ 0
+	6200 2600 6350 2600
+Text GLabel 6350 2600 2    50   Input ~ 0
 PWR
 Text GLabel 4250 4450 0    50   Input ~ 0
 PWR
+Wire Notes Line
+	6900 2100 3750 2100
+Wire Notes Line
+	6900 2100 6900 7750
+Wire Notes Line
+	3750 2100 3750 7750
+Wire Notes Line
+	4900 2850 4900 2100
+Text Notes 3850 2800 0    50   ~ 0
+Mounting Hole
+Text Notes 4950 2200 0    50   ~ 0
+Polarity Protection
 $EndSCHEMATC
