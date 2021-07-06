@@ -1,0 +1,22 @@
+### Module positions - created on 07/06/21 12:47:26 ###
+### Printed by Pcbnew version kicad (5.1.9)-1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val            Package                                  PosX       PosY       Rot  Side
+C3        10uF           CAPC3216X180N                         25.4000   -46.3550   90.0000  top
+C11       100uF          CAPAE660X800N                         18.4150   -49.9650  180.0000  top
+C12       270pF          C_0402_1005Metric                     36.8300   -41.9100    0.0000  top
+C13       .1uF           CAPC0603X33N                          38.1000   -43.8150  180.0000  top
+D1        WS2812B        LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm    19.0500   -41.6100    0.0000  top
+IC2       3.3V_Reg       SOIC127P600X170-8N                    48.2600   -62.2300    0.0000  top
+IC3       5V_Reg         AP1501A50K5G13                        46.3550   -49.5300    0.0000  top
+R1        5.1k           R_0402_1005Metric                     17.7800   -45.0850    0.0000  top
+R3        5.1k           R_0402_1005Metric                     20.3200   -45.0850  180.0000  top
+R5        5.1k           R_0402_1005Metric                     36.8300   -42.9300    0.0000  top
+R8        20k            R_0402_1005Metric                     37.8500   -44.6500    0.0000  top
+R10       5k             R_0402_1005Metric                     36.3950   -45.0850   90.0000  top
+R11       10k            R_0402_1005Metric                     26.6700   -40.6400    0.0000  top
+R12       10k            R_0402_1005Metric                     26.6700   -41.7100    0.0000  top
+S1        nRST           LL3301NF065QG                         57.1500   -48.8950  270.0000  top
+Z1        SZMMSZ4713T1G  SODFL4724X108N                        21.1900   -56.7500  270.0000  top
+## End
