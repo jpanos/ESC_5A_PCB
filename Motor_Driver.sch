@@ -73,8 +73,6 @@ F 3 "" H 1650 6400 50  0001 C CNN
 	1    1650 6400
 	1    0    0    -1  
 $EndComp
-Text GLabel 2300 5850 2    50   Input ~ 0
-PWR_IN
 Wire Wire Line
 	3750 3850 3750 3900
 Wire Wire Line
@@ -752,4 +750,6 @@ F 9 "XT30PB" H 4200 6250 50  0001 L CNN "Manufacturer_Part_Number"
 	1    3550 6850
 	1    0    0    -1  
 $EndComp
+Text GLabel 2300 5850 2    50   Input ~ 0
+PWR
 $EndSCHEMATC

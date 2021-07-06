@@ -548,6 +548,31 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
+# SamacSys_Parts_SZMMSZ4713T1G
+#
+DEF SamacSys_Parts_SZMMSZ4713T1G Z 0 30 Y Y 1 F N
+F0 "Z" 400 350 50 H V L CNN
+F1 "SamacSys_Parts_SZMMSZ4713T1G" 400 250 50 H V L CNN
+F2 "SOD3716X135N" 400 150 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/2/SZMMSZ4713T1G.pdf" 400 50 50 H I L CNN
+F4 "Zener Diodes ZEN REG 0.5W 30V" 400 -50 50 H I L CNN "Description"
+F5 "1.35" 400 -150 50 H I L CNN "Height"
+F6 "863-SZMMSZ4713T1G" 400 -250 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/SZMMSZ4713T1G?qs=PJJcWtbOkNU%2F%252BcrJAwZPrw%3D%3D" 400 -350 50 H I L CNN "Mouser Price/Stock"
+F8 "ON Semiconductor" 400 -450 50 H I L CNN "Manufacturer_Name"
+F9 "SZMMSZ4713T1G" 400 -550 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 160 -100 200 -80 N
+P 2 0 1 6 200 80 200 -80 N
+P 2 0 1 6 200 80 240 100 N
+P 2 0 1 6 500 0 400 0 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 600 0 100 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # SamacSys_Parts_XT30PB
 #
 DEF SamacSys_Parts_XT30PB J 0 30 Y Y 1 F N
