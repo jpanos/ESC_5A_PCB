@@ -414,12 +414,6 @@ Wire Notes Line
 	2700 5650 2700 7700
 Text Notes 800  5750 0    50   ~ 0
 Motor Power
-Text GLabel 3550 5900 0    50   Input ~ 0
-MotorA_Pos_Out
-Text GLabel 3550 6000 0    50   Input ~ 0
-MotorA_Neg_Out
-Text GLabel 3550 6350 0    50   Input ~ 0
-MotorB_Pos_Out
 Text GLabel 3550 6450 0    50   Input ~ 0
 MotorB_Neg
 Text GLabel 3550 6850 0    50   Input ~ 0
@@ -460,8 +454,6 @@ F 9 "PCS2512DR0100ET" H 2150 1800 50  0001 L CNN "Manufacturer_Part_Number"
 	1    1600 2450
 	1    0    0    -1  
 $EndComp
-Text GLabel 1300 2450 0    50   Input ~ 0
-MotorA_Pos
 Wire Wire Line
 	1300 2450 1500 2450
 Wire Wire Line
@@ -478,49 +470,8 @@ Wire Wire Line
 	2400 2450 2500 2450
 Text GLabel 1500 2550 3    50   Input ~ 0
 ADC_VREFA
-Text GLabel 1500 1850 1    50   Input ~ 0
-ADC_VREFB
 Text GLabel 2400 2550 3    50   Input ~ 0
 ADC_1
-Text GLabel 2400 1800 1    50   Input ~ 0
-ADC_2
-Wire Wire Line
-	2400 2100 2500 2100
-Connection ~ 2400 2100
-Wire Wire Line
-	2400 2100 2400 1800
-Wire Wire Line
-	1500 2100 1600 2100
-Connection ~ 1500 2100
-Wire Wire Line
-	1500 2100 1500 1850
-Wire Wire Line
-	2300 2100 2400 2100
-Wire Wire Line
-	1300 2100 1500 2100
-Text GLabel 1300 2100 0    50   Input ~ 0
-MotorB_Pos
-$Comp
-L ESC_5A-rescue:PCS2512DR0100ET-SamacSys_Parts R6
-U 1 1 60D7DF37
-P 1600 2100
-F 0 "R6" H 1950 2325 50  0000 C CNN
-F 1 ".01" H 1950 2234 50  0000 C CNN
-F 2 "SamacSys_Parts:RESC6430X66N" H 2150 2150 50  0001 L CNN
-F 3 "https://rs.componentsearchengine.com/Datasheets/2/PCS2512DR0100ET.pdf" H 2150 2050 50  0001 L CNN
-F 4 "Current Sense Resistors - SMD" H 2150 1950 50  0001 L CNN "Description"
-F 5 "0.664" H 2150 1850 50  0001 L CNN "Height"
-F 6 "588-PCS2512DR0100ET" H 2150 1750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Ohmite/PCS2512DR0100ET?qs=Zz7%252BYVVL6bF4W%2Fc9YcyG%2Fg%3D%3D" H 2150 1650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Ohmite" H 2150 1550 50  0001 L CNN "Manufacturer_Name"
-F 9 "PCS2512DR0100ET" H 2150 1450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1600 2100
-	1    0    0    -1  
-$EndComp
-Text GLabel 2500 2100 2    50   Input ~ 0
-MotorB_Pos_Out
-Text GLabel 2500 2450 2    50   Input ~ 0
-MotorA_Pos_Out
 Wire Notes Line
 	700  5650 4550 5650
 Wire Notes Line
@@ -530,54 +481,13 @@ Wire Notes Line
 Wire Notes Line
 	700  1300 700  7700
 Text Notes 3300 1450 0    50   ~ 0
-Current Sense for M1, M2, and single motor
-$Comp
-L ESC_5A-rescue:PCS2512DR0100ET-SamacSys_Parts R9
-U 1 1 60DD4ABF
-P 4050 2100
-F 0 "R9" H 4400 2325 50  0000 C CNN
-F 1 ".01" H 4400 2234 50  0000 C CNN
-F 2 "SamacSys_Parts:RESC6430X66N" H 4600 2150 50  0001 L CNN
-F 3 "https://rs.componentsearchengine.com/Datasheets/2/PCS2512DR0100ET.pdf" H 4600 2050 50  0001 L CNN
-F 4 "Current Sense Resistors - SMD" H 4600 1950 50  0001 L CNN "Description"
-F 5 "0.664" H 4600 1850 50  0001 L CNN "Height"
-F 6 "588-PCS2512DR0100ET" H 4600 1750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Ohmite/PCS2512DR0100ET?qs=Zz7%252BYVVL6bF4W%2Fc9YcyG%2Fg%3D%3D" H 4600 1650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Ohmite" H 4600 1550 50  0001 L CNN "Manufacturer_Name"
-F 9 "PCS2512DR0100ET" H 4600 1450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4050 2100
-	1    0    0    -1  
-$EndComp
-Text GLabel 3800 2100 0    50   Input ~ 0
-MotorA_Neg
-Text GLabel 5000 2100 2    50   Input ~ 0
-MotorA_Neg_Out
-Wire Wire Line
-	3800 2100 3950 2100
-Wire Wire Line
-	4750 2100 4850 2100
-Wire Wire Line
-	3950 2100 3950 2200
-Connection ~ 3950 2100
-Wire Wire Line
-	3950 2100 4050 2100
-Wire Wire Line
-	4850 2100 4850 2200
-Connection ~ 4850 2100
-Wire Wire Line
-	4850 2100 5000 2100
-Text GLabel 3950 2200 3    50   Input ~ 0
-ADC_MUX_GND
-Text GLabel 4850 2200 3    50   Input ~ 0
-ADC_3
+Current Sense for board power input
 Wire Notes Line
 	4550 3100 4550 6650
 Wire Notes Line
 	6900 1300 6900 7700
 Wire Notes Line
 	700  1300 6900 1300
-Text Notes 4300 2700 0    50   ~ 0
-By using the current through A_Pos and A_Neg summed together\nyou can get the current through the single motor.
 $Comp
 L ESC_5A-rescue:C0805C104MMREC7210-SamacSys_Parts C10
 U 1 1 60ED41BF
@@ -752,4 +662,14 @@ F 9 "XT30PB" H 4200 6250 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 Text GLabel 2300 5850 2    50   Input ~ 0
 PWR
+Text GLabel 1300 2450 0    50   Input ~ 0
+PWR_Main
+Text GLabel 2500 2450 2    50   Input ~ 0
+PWR
+Text GLabel 3550 5900 0    50   Input ~ 0
+MotorA_Pos
+Text GLabel 3550 6000 0    50   Input ~ 0
+MotorA_Neg
+Text GLabel 3550 6350 0    50   Input ~ 0
+MotorB_Pos
 $EndSCHEMATC
