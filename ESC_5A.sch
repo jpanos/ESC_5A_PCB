@@ -239,6 +239,19 @@ F 3 "" H 1050 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L power:GND #PWR024
+U 1 1 60D06FC2
+P 8550 3850
+F 0 "#PWR024" H 8550 3600 50  0001 C CNN
+F 1 "GND" H 8555 3677 50  0000 C CNN
+F 2 "" H 8550 3850 50  0001 C CNN
+F 3 "" H 8550 3850 50  0001 C CNN
+	1    8550 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3750 8550 3850
+$Comp
 L power:GND #PWR023
 U 1 1 60D09073
 P 8000 3850
@@ -265,14 +278,16 @@ $EndComp
 $Comp
 L power:GND #PWR025
 U 1 1 60D0D0CF
-P 9150 6150
-F 0 "#PWR025" H 9150 5900 50  0001 C CNN
-F 1 "GND" H 9155 5977 50  0000 C CNN
-F 2 "" H 9150 6150 50  0001 C CNN
-F 3 "" H 9150 6150 50  0001 C CNN
-	1    9150 6150
+P 8750 6150
+F 0 "#PWR025" H 8750 5900 50  0001 C CNN
+F 1 "GND" H 8755 5977 50  0000 C CNN
+F 2 "" H 8750 6150 50  0001 C CNN
+F 3 "" H 8750 6150 50  0001 C CNN
+	1    8750 6150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8750 6050 8750 6150
 Text GLabel 10100 4150 2    50   Input ~ 0
 D+
 Text GLabel 10100 4250 2    50   Input ~ 0
@@ -327,7 +342,7 @@ Wire Wire Line
 	4850 4750 4850 4950
 Wire Wire Line
 	5050 4450 5050 4550
-Text GLabel 5450 2600 0    50   Input ~ 0
+Text GLabel 4250 4450 0    50   Input ~ 0
 PWR_IN
 Wire Wire Line
 	5050 4850 4950 4850
@@ -444,8 +459,14 @@ Text GLabel 9750 3300 1    50   Input ~ 0
 HBMODE
 Wire Wire Line
 	9050 5550 8750 5550
+Wire Wire Line
+	9150 5550 9150 6050
+Wire Wire Line
+	9150 6050 8750 6050
 Wire Notes Line
 	11050 6450 11050 2850
+Wire Notes Line
+	6900 2850 6900 7750
 Wire Notes Line
 	2150 6450 11050 6450
 Text Notes 7000 2950 0    50   ~ 0
@@ -556,8 +577,16 @@ NoConn ~ 4950 7050
 NoConn ~ 4950 7150
 Text GLabel 8700 4450 0    50   Input ~ 0
 ADC_VREFA
+Text GLabel 8700 4550 0    50   Input ~ 0
+ADC_VREFB
 Text GLabel 8700 4850 0    50   Input ~ 0
 ADC_1
+Text GLabel 8700 4650 0    50   Input ~ 0
+ADC_2
+Text GLabel 8700 4350 0    50   Input ~ 0
+ADC_MUX_GND
+Text GLabel 8700 4750 0    50   Input ~ 0
+ADC_3
 Wire Wire Line
 	10050 4350 10100 4350
 Wire Wire Line
@@ -719,6 +748,8 @@ F 3 "" H 4500 3300 50  0001 C CNN
 	1    4500 3300
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	3750 2850 3750 7750
 Wire Notes Line
 	3750 2850 11050 2850
 Text Notes 3800 2950 0    50   ~ 0
@@ -987,23 +1018,23 @@ PPM_1
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 60EFB1DF
-P 4050 2550
-F 0 "H2" H 4150 2596 50  0000 L CNN
-F 1 "MountingHole" H 4150 2505 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 4050 2550 50  0001 C CNN
-F 3 "~" H 4050 2550 50  0001 C CNN
-	1    4050 2550
+P 3850 2650
+F 0 "H2" H 3950 2696 50  0000 L CNN
+F 1 "MountingHole" H 3950 2605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 3850 2650 50  0001 C CNN
+F 3 "~" H 3850 2650 50  0001 C CNN
+	1    3850 2650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 60EFB7EF
-P 4050 2300
-F 0 "H1" H 4150 2346 50  0000 L CNN
-F 1 "MountingHole" H 4150 2255 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 4050 2300 50  0001 C CNN
-F 3 "~" H 4050 2300 50  0001 C CNN
-	1    4050 2300
+P 3850 2400
+F 0 "H1" H 3950 2446 50  0000 L CNN
+F 1 "MountingHole" H 3950 2355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 3850 2400 50  0001 C CNN
+F 3 "~" H 3850 2400 50  0001 C CNN
+	1    3850 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1071,65 +1102,4 @@ Wire Wire Line
 	9350 3000 9350 3350
 Wire Wire Line
 	8000 3000 8000 3250
-Wire Wire Line
-	9150 5550 9150 6150
-$Comp
-L power:+3.3V #PWR0106
-U 1 1 60E5850F
-P 8750 6050
-F 0 "#PWR0106" H 8750 5900 50  0001 C CNN
-F 1 "+3.3V" H 8765 6223 50  0000 C CNN
-F 2 "" H 8750 6050 50  0001 C CNN
-F 3 "" H 8750 6050 50  0001 C CNN
-	1    8750 6050
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR0107
-U 1 1 60E5C5E8
-P 8550 3750
-F 0 "#PWR0107" H 8550 3600 50  0001 C CNN
-F 1 "+3.3V" H 8565 3923 50  0000 C CNN
-F 2 "" H 8550 3750 50  0001 C CNN
-F 3 "" H 8550 3750 50  0001 C CNN
-	1    8550 3750
-	-1   0    0    1   
-$EndComp
-$Comp
-L SamacSys_Parts:SZMMSZ4713T1G Z1
-U 1 1 60EAF0E9
-P 6200 2600
-F 0 "Z1" H 6500 2333 50  0000 C CNN
-F 1 "SZMMSZ4713T1G" H 6500 2424 50  0000 C CNN
-F 2 "SOD3716X135N" H 6600 2750 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/2/SZMMSZ4713T1G.pdf" H 6600 2650 50  0001 L CNN
-F 4 "Zener Diodes ZEN REG 0.5W 30V" H 6600 2550 50  0001 L CNN "Description"
-F 5 "1.35" H 6600 2450 50  0001 L CNN "Height"
-F 6 "863-SZMMSZ4713T1G" H 6600 2350 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/SZMMSZ4713T1G?qs=PJJcWtbOkNU%2F%252BcrJAwZPrw%3D%3D" H 6600 2250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 6600 2150 50  0001 L CNN "Manufacturer_Name"
-F 9 "SZMMSZ4713T1G" H 6600 2050 50  0001 L CNN "Manufacturer_Part_Number"
-	1    6200 2600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5450 2600 5600 2600
-Wire Wire Line
-	6200 2600 6350 2600
-Text GLabel 6350 2600 2    50   Input ~ 0
-PWR_Main
-Text GLabel 4250 4450 0    50   Input ~ 0
-PWR
-Wire Notes Line
-	6900 2100 3750 2100
-Wire Notes Line
-	6900 2100 6900 7750
-Wire Notes Line
-	3750 2100 3750 7750
-Wire Notes Line
-	4900 2850 4900 2100
-Text Notes 3850 2800 0    50   ~ 0
-Mounting Hole
-Text Notes 4950 2200 0    50   ~ 0
-Polarity Protection
 $EndSCHEMATC

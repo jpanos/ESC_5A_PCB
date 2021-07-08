@@ -556,16 +556,8 @@ NoConn ~ 4950 7050
 NoConn ~ 4950 7150
 Text GLabel 8700 4450 0    50   Input ~ 0
 ADC_VREFA
-Text GLabel 8700 4550 0    50   Input ~ 0
-ADC_VREFB
 Text GLabel 8700 4850 0    50   Input ~ 0
 ADC_1
-Text GLabel 8700 4650 0    50   Input ~ 0
-ADC_2
-Text GLabel 8700 4350 0    50   Input ~ 0
-ADC_MUX_GND
-Text GLabel 8700 4750 0    50   Input ~ 0
-ADC_3
 Wire Wire Line
 	10050 4350 10100 4350
 Wire Wire Line
@@ -1125,7 +1117,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 2600 6350 2600
 Text GLabel 6350 2600 2    50   Input ~ 0
-PWR
+PWR_Main
 Text GLabel 4250 4450 0    50   Input ~ 0
 PWR
 Wire Notes Line
