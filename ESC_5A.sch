@@ -210,33 +210,18 @@ F 3 "" H 3150 5700 50  0001 C CNN
 	1    3150 5700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US R2
-U 1 1 60CFD404
-P 1050 6450
-F 0 "R2" H 1118 6496 50  0000 L CNN
-F 1 "100k" H 1118 6405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1090 6440 50  0001 C CNN
-F 3 "~" H 1050 6450 50  0001 C CNN
-	1    1050 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 6650 1650 6450
-Text GLabel 1650 6450 1    50   Input ~ 0
-NRST
 Text GLabel 9650 3300 1    50   Input ~ 0
 NRST
 $Comp
 L power:+3.3V #PWR02
 U 1 1 60D05051
-P 1050 6250
-F 0 "#PWR02" H 1050 6100 50  0001 C CNN
-F 1 "+3.3V" H 1065 6423 50  0000 C CNN
-F 2 "" H 1050 6250 50  0001 C CNN
-F 3 "" H 1050 6250 50  0001 C CNN
-	1    1050 6250
-	1    0    0    -1  
+P 950 6550
+F 0 "#PWR02" H 950 6400 50  0001 C CNN
+F 1 "+3.3V" H 965 6723 50  0000 C CNN
+F 2 "" H 950 6550 50  0001 C CNN
+F 3 "" H 950 6550 50  0001 C CNN
+	1    950  6550
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR023
@@ -277,16 +262,10 @@ Text GLabel 10100 4150 2    50   Input ~ 0
 D+
 Text GLabel 10100 4250 2    50   Input ~ 0
 D-
-Wire Wire Line
-	1050 6650 1050 6600
-Wire Wire Line
-	1050 6300 1050 6250
 Wire Notes Line
 	700  7750 6900 7750
 Wire Notes Line
 	700  5950 2150 5950
-Text Notes 1400 6150 0    50   ~ 0
-nRST Debounced
 Text Notes 850  4350 0    50   ~ 0
 USBc Connector
 $Comp
@@ -732,23 +711,6 @@ Wire Notes Line
 Text Notes 3800 2950 0    50   ~ 0
 EEPROM 
 $Comp
-L ESC_5A-rescue:GRM033R61C104KE84D-SamacSys_Parts C1
-U 1 1 60F10D35
-P 1650 7450
-F 0 "C1" V 1946 7322 50  0000 R CNN
-F 1 ".1uF" V 1855 7322 50  0000 R CNN
-F 2 "SamacSys_Parts:CAPC0603X33N" H 2000 7500 50  0001 L CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf" H 2000 7400 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.10uF 16volts *Derate Voltage/Temp" H 2000 7300 50  0001 L CNN "Description"
-F 5 "0.33" H 2000 7200 50  0001 L CNN "Height"
-F 6 "81-GRM33R61C104KE84D" H 2000 7100 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM033R61C104KE84D?qs=rzJGveiEhFO7hHVM4AVZng%3D%3D" H 2000 7000 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Murata Electronics" H 2000 6900 50  0001 L CNN "Manufacturer_Name"
-F 9 "GRM033R61C104KE84D" H 2000 6800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1650 7450
-	0    -1   -1   0   
-$EndComp
-$Comp
 L ESC_5A-rescue:GRM033R61C104KE84D-SamacSys_Parts C9
 U 1 1 60F1C7F6
 P 8750 6050
@@ -922,48 +884,6 @@ Wire Notes Line
 	700  4200 6900 4200
 Wire Notes Line
 	700  4200 700  7750
-$Comp
-L ESC_5A-rescue:LL3301NF065QG-SamacSys_Parts S1
-U 1 1 610975F8
-P 1050 7450
-F 0 "S1" H 1450 7715 50  0000 C CNN
-F 1 "nRST" H 1450 7624 50  0000 C CNN
-F 2 "SamacSys_Parts:LL3301NF065QG" H 1700 7550 50  0001 L CNN
-F 3 "http://spec_sheets.e-switch.com/specs/P090002.pdf" H 1700 7450 50  0001 L CNN
-F 4 "E-SWITCH - LL3301NF065QG - TACTILE SW, SPST, 0.05A, 12VDC, SOLDER" H 1700 7350 50  0001 L CNN "Description"
-F 5 "4" H 1700 7250 50  0001 L CNN "Height"
-F 6 "612-LL3301NF065QG" H 1700 7150 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/E-Switch/LL3301NF065QG?qs=QtyuwXswaQiWhwgY68YTTw%3D%3D" H 1700 7050 50  0001 L CNN "Mouser Price/Stock"
-F 8 "E-Switch" H 1700 6950 50  0001 L CNN "Manufacturer_Name"
-F 9 "LL3301NF065QG" H 1700 6850 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1050 7450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 7450 1650 7450
-Wire Wire Line
-	1150 7450 1050 7450
-Connection ~ 1150 7450
-$Comp
-L power:GND #PWR0103
-U 1 1 610B2552
-P 1050 7450
-F 0 "#PWR0103" H 1050 7200 50  0001 C CNN
-F 1 "GND" H 1055 7277 50  0000 C CNN
-F 2 "" H 1050 7450 50  0001 C CNN
-F 3 "" H 1050 7450 50  0001 C CNN
-	1    1050 7450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 6650 1150 6650
-Connection ~ 1050 6650
-Wire Wire Line
-	1650 6650 1650 6950
-Wire Wire Line
-	1150 6650 1650 6650
-Connection ~ 1150 6650
-Connection ~ 1650 6650
 Wire Notes Line
 	2150 5950 2150 7750
 $Comp
@@ -1140,4 +1060,99 @@ Text Notes 3850 2800 0    50   ~ 0
 Mounting Holes
 Text Notes 5200 2300 0    50   ~ 0
 Polarity Protection 
+$Comp
+L power:GND #PWR0103
+U 1 1 610B2552
+P 2000 7000
+F 0 "#PWR0103" H 2000 6750 50  0001 C CNN
+F 1 "GND" H 2005 6827 50  0000 C CNN
+F 2 "" H 2000 7000 50  0001 C CNN
+F 3 "" H 2000 7000 50  0001 C CNN
+	1    2000 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ESC_5A-rescue:GRM033R61C104KE84D-SamacSys_Parts C1
+U 1 1 60F10D35
+P 1950 6200
+F 0 "C1" V 2246 6072 50  0000 R CNN
+F 1 ".1uF" V 2155 6072 50  0000 R CNN
+F 2 "SamacSys_Parts:CAPC0603X33N" H 2300 6250 50  0001 L CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf" H 2300 6150 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0201 0.10uF 16volts *Derate Voltage/Temp" H 2300 6050 50  0001 L CNN "Description"
+F 5 "0.33" H 2300 5950 50  0001 L CNN "Height"
+F 6 "81-GRM33R61C104KE84D" H 2300 5850 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM033R61C104KE84D?qs=rzJGveiEhFO7hHVM4AVZng%3D%3D" H 2300 5750 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 2300 5650 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM033R61C104KE84D" H 2300 5550 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1950 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 6550 950  6550
+Wire Wire Line
+	1350 6550 1300 6550
+Text GLabel 1150 6200 0    50   Input ~ 0
+NRST
+Wire Wire Line
+	1350 6200 1150 6200
+$Comp
+L Device:R_US R2
+U 1 1 60CFD404
+P 1150 6550
+F 0 "R2" H 1218 6596 50  0000 L CNN
+F 1 "100k" H 1218 6505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1190 6540 50  0001 C CNN
+F 3 "~" H 1150 6550 50  0001 C CNN
+	1    1150 6550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:PTS526_SK15_SMTR2_LFS S1
+U 1 1 60EDDE70
+P 1700 7650
+F 0 "S1" H 2300 7915 50  0000 C CNN
+F 1 "PTS526_SK15_SMTR2_LFS" H 2300 7824 50  0000 C CNN
+F 2 "PTS526SK15SMTR2LFS" H 2750 7750 50  0001 L CNN
+F 3 "https://www.ckswitches.com/media/2780/pts526.pdf" H 2750 7650 50  0001 L CNN
+F 4 "Tact 5.2 x 5.2, 1.5 mm H, 260gf, G leads, No ground pin, metal actuator" H 2750 7550 50  0001 L CNN "Description"
+F 5 "1.65" H 2750 7450 50  0001 L CNN "Height"
+F 6 "611-PTS526SK15SMR2L" H 2750 7350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/CK/PTS526-SK15-SMTR2-LFS?qs=UXgszm6BlbF5Ezp94JAQtw%3D%3D" H 2750 7250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "C & K COMPONENTS" H 2750 7150 50  0001 L CNN "Manufacturer_Name"
+F 9 "PTS526 SK15 SMTR2 LFS" H 2750 7050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1700 7650
+	0    -1   -1   0   
+$EndComp
+Text Notes 900  7600 1    50   ~ 0
+nRST Debounced
+Wire Wire Line
+	1700 7650 1350 7650
+Wire Wire Line
+	1350 7650 1350 6550
+Wire Wire Line
+	1350 6450 1700 6450
+Connection ~ 1350 6550
+Wire Wire Line
+	1350 6550 1350 6450
+Wire Wire Line
+	1350 6450 1350 6200
+Connection ~ 1350 6450
+Wire Wire Line
+	1800 7650 2000 7650
+Wire Wire Line
+	2000 7650 2000 7000
+Wire Wire Line
+	2000 6450 1800 6450
+Connection ~ 2000 7000
+Wire Wire Line
+	2000 7000 2000 6450
+Wire Wire Line
+	2000 6450 2000 6200
+Wire Wire Line
+	2000 6200 1950 6200
+Connection ~ 2000 6450
+Wire Wire Line
+	1450 6200 1350 6200
+Connection ~ 1350 6200
 $EndSCHEMATC

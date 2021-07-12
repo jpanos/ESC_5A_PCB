@@ -336,28 +336,6 @@ X ~ 2 500 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# ESC_5A-rescue_LL3301NF065QG-SamacSys_Parts
-#
-DEF ESC_5A-rescue_LL3301NF065QG-SamacSys_Parts S 0 30 Y Y 1 F N
-F0 "S" 650 300 50 H V L CNN
-F1 "ESC_5A-rescue_LL3301NF065QG-SamacSys_Parts" 650 200 50 H V L CNN
-F2 "LL3301NF065QG" 650 100 50 H I L CNN
-F3 "http://spec_sheets.e-switch.com/specs/P090002.pdf" 650 0 50 H I L CNN
-F4 "E-SWITCH - LL3301NF065QG - TACTILE SW, SPST, 0.05A, 12VDC, SOLDER" 650 -100 50 H I L CNN "Description"
-F5 "4" 650 -200 50 H I L CNN "Height"
-F6 "612-LL3301NF065QG" 650 -300 50 H I L CNN "Mouser Part Number"
-F7 "https://www.mouser.co.uk/ProductDetail/E-Switch/LL3301NF065QG?qs=QtyuwXswaQiWhwgY68YTTw%3D%3D" 650 -400 50 H I L CNN "Mouser Price/Stock"
-F8 "E-Switch" 650 -500 50 H I L CNN "Manufacturer_Name"
-F9 "LL3301NF065QG" 650 -600 50 H I L CNN "Manufacturer_Part_Number"
-DRAW
-P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
-X 1 1 0 0 200 R 50 50 0 0 P
-X 2 2 800 0 200 L 50 50 0 0 P
-X 3 3 0 -100 200 R 50 50 0 0 P
-X 4 4 800 -100 200 L 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
 # ESC_5A-rescue_MPX1D0830L330-SamacSys_Parts
 #
 DEF ESC_5A-rescue_MPX1D0830L330-SamacSys_Parts L 0 30 Y Y 1 F N
@@ -545,6 +523,28 @@ $FPLIST
 $ENDFPLIST
 DRAW
 C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_PTS526_SK15_SMTR2_LFS
+#
+DEF SamacSys_Parts_PTS526_SK15_SMTR2_LFS S 0 30 Y Y 1 F N
+F0 "S" 1050 300 50 H V L CNN
+F1 "SamacSys_Parts_PTS526_SK15_SMTR2_LFS" 1050 200 50 H V L CNN
+F2 "PTS526SK15SMTR2LFS" 1050 100 50 H I L CNN
+F3 "https://www.ckswitches.com/media/2780/pts526.pdf" 1050 0 50 H I L CNN
+F4 "Tact 5.2 x 5.2, 1.5 mm H, 260gf, G leads, No ground pin, metal actuator" 1050 -100 50 H I L CNN "Description"
+F5 "1.65" 1050 -200 50 H I L CNN "Height"
+F6 "611-PTS526SK15SMR2L" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/CK/PTS526-SK15-SMTR2-LFS?qs=UXgszm6BlbF5Ezp94JAQtw%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "C & K COMPONENTS" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "PTS526 SK15 SMTR2 LFS" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -200 200 -200 200 100 N
+X COM_1 1 0 0 200 R 50 50 0 0 P
+X COM_2 2 1200 0 200 L 50 50 0 0 P
+X NO_1 3 0 -100 200 R 50 50 0 0 P
+X NO_2 4 1200 -100 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
